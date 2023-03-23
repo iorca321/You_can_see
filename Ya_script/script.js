@@ -9,7 +9,7 @@ let phrases = [
     { text: 'попасть в поток грустных песен и вспомнить все ошибки молодости #Хтонь', image: 'https://code.s3.yandex.net/web-code/procrastinate/8.png' },
     { text: 'посмотреть трейлер сериала и заодно весь первый сезон', image: 'https://code.s3.yandex.net/web-code/procrastinate/9.png' },
     { text: 'проверить непрочитанное в Telegram-каналах', image: 'https://code.s3.yandex.net/web-code/procrastinate/10.png' },
-    { text: 'оформлять монобутики Филип Моррис', image: 'philip-morris-1-logo-png-transparent.png' },
+    { text: 'оформлять монобутики Филип Моррис', image: 'img/philip-morris-1-logo-png-transparent.png' },
 ];
 let arr 
 function getRandomElement(arr){
@@ -24,7 +24,6 @@ let phrase  = document.querySelector('.phrase');
 let image = document.querySelector('.image');
 // выбор эллементов сстраницы
 
-
 button.addEventListener('click', function () {
     let randomElement = getRandomElement(phrases);
     smoothly(phrase, 'textContent', randomElement.text)
@@ -38,9 +37,16 @@ button.addEventListener('click', function () {
         }
 }); 
 
-for (let i=9; i <= 11; i = i + 1){
-    let randomFromStart = getRandomElement(phrases);
-    console.log (randomFromStart.text);
-    smoothly(phrase, 'textContent', phrases[i].text);
-    smoothly(image, 'src', phrases[i].image);
+setTimeout(function(){
+    for (let i=0; i <= 1; i = i + 1){
+        let randomFromStart = getRandomElement(phrases);
+        console.log (randomFromStart.text);
+        smoothly(phrase, 'textContent', randomFromStart.text);
+        smoothly(image, 'src', randomFromStart.image);
     }
+    //for (let i=0; i <= 2; i = i + 1){
+        //console.log (phrases[i]);
+        //smoothly(phrase, 'textContent', phrases[i].text);
+        //smoothly(image, 'src', phrases[i].image);
+        //}
+}, 1000);

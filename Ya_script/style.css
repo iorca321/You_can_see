@@ -61,6 +61,7 @@
     width: 80%;
     display: block;
     margin: 60px auto 50px;
+    animation-delay: 5s;
   }
   
   .advice {
@@ -68,6 +69,7 @@
     font-weight: bold;
     line-height: 1.1;
     margin-bottom: 70px;
+    animation-delay: 5s;
   }
   
   .footer {
@@ -76,4 +78,5 @@
     position: absolute;
     bottom: 36px;
   }
+
   
