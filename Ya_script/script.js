@@ -7,8 +7,9 @@ let phrases = [
     { text: 'читать про зарплаты в Сан-Франциско', image: 'https://code.s3.yandex.net/web-code/procrastinate/6.png' },
     { text: 'прочитать новости и ужаснуться в комментариях', image: 'https://code.s3.yandex.net/web-code/procrastinate/7.png' },
     { text: 'попасть в поток грустных песен и вспомнить все ошибки молодости #Хтонь', image: 'https://code.s3.yandex.net/web-code/procrastinate/8.png' },
-    { text: 'посмотреть трейлер сериала и заодно первый сезон', image: 'https://code.s3.yandex.net/web-code/procrastinate/9.png' },
+    { text: 'посмотреть трейлер сериала и заодно весь первый сезон', image: 'https://code.s3.yandex.net/web-code/procrastinate/9.png' },
     { text: 'проверить непрочитанное в Telegram-каналах', image: 'https://code.s3.yandex.net/web-code/procrastinate/10.png' },
+    { text: 'оформлять монобутики Филип Моррис', image: 'philip-morris-1-logo-png-transparent.png' },
 ];
 let arr 
 function getRandomElement(arr){
@@ -26,12 +27,20 @@ let image = document.querySelector('.image');
 
 button.addEventListener('click', function () {
     let randomElement = getRandomElement(phrases);
-    phrase.textContent = randomElement.text;
-    image.src = randomElement.image;
+    smoothly(phrase, 'textContent', randomElement.text)
+    smoothly(image, 'src', randomElement.image)
     // что происходит при клике по кнопке
-    if (randomElement.text.length < 40) {
-    } else {
-    advice.style.fontSize = '42px'
-    }
+    if (randomElement.text.length > 40) 
+        {
+        advice.style.fontSize = '33px';
+        } else {
+        advice.style.fontSize = '42px';
+        }
 }); 
 
+for (let i=9; i <= 11; i = i + 1){
+    let randomFromStart = getRandomElement(phrases);
+    console.log (randomFromStart.text);
+    smoothly(phrase, 'textContent', phrases[i].text);
+    smoothly(image, 'src', phrases[i].image);
+    }
