@@ -28,6 +28,14 @@
     box-sizing: border-box;
     padding: 36px;
   }
+
+  A {
+    color: #ff9e19;
+  }
+  A:visited {
+    color: #ff9e19;
+    text-decoration: line-through;
+  }
   
   .header {
     display: flex;
@@ -42,6 +50,7 @@
   }
   
   .button {
+    color: #ff9e19;
     width: 130px;
     height: 40px;
     padding-top: 10px;
@@ -78,5 +87,3 @@
     position: absolute;
     bottom: 36px;
   }
-
-  
