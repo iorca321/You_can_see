@@ -43,51 +43,64 @@
 </head>
 
 <body>
-    <header class="main-header">
+    <header>
         <!-- #topline =========================================================== -->
-        <ul>
-            <li><a href="pages/rental.html">Условия проката</a></li>
-            <li><a href="pages/feedback">Отзывы</a></li>
-            <li><a href="pages/about">О нас</a></li>
-            <li><a href="pages/contacts">Контакты</a></li>
-        </ul>
+        <div class="topline">
+            <ul class="topline-menu">
+                <li class="topline-menu-list"><a href="pages/rental.html">Условия проката</a></li>
+                <li class="topline-menu-list"><a href="pages/feedback">Отзывы</a></li>
+                <li class="topline-menu-list"><a href="pages/about">О нас</a></li>
+                <li class="topline-menu-list"><a href="pages/contacts">Контакты</a></li>
+            </ul>
+        </div>
         <!-- #header =========================================================== -->
-        <div>
+        <div class="main-header">
             <a class="main-header-logo">
-                <img src="img/logo.png" width="180" height="180" alt="Логотип сайта" />
+                <img src="img/logo.png" width="69" height="69" alt="Логотип сайта" />
             </a>
             <div class="topline-search">
                 <form role="search" method="get" class="woocommerce-product-search" action="SITE NAME">
-                    <label class="screen-reader-text" for="woocommerce-product-search-field-0">Искать:</label>
+                    <label class="screen-reader-text" for="woocommerce-product-search-field-0"></label>
                     <input type="search" autocomplete="off" id="woocommerce-product-search-field-0" class="search-field"
                         placeholder="Поиск по каталогу..." value="" name="s">
-                    <button type="submit" style="background-image: url(i/search.png);" name="search">
-                        <img src="i/search.png" alt="Лупа" width="10" height="10">
-                    </button>
+                    <!-- <button type="submit" style="background-image: url(i/search.png);" name="search">
+                <img src="i/search.png" alt="Лупа" width="10" height="10">
+              </button> -->
                     <input type="hidden" name="post_type" value="product">
                 </form>
-                <div class="link-whatsapp icon-whatsapp">
-                    <img src="i/whatsapp.svg" alt="WhatsApp" width="30" height="30">
-                    <a href="https://wa.me/79261055904" target="_blank">Написать в WhatsApp</a>
-                </div>
-                <div class="phone-box">
-                    <img src="i/telephone.png" alt="WhatsApp" width="30" height="30">
-                    <a class="phone" href="tel:89261055904" target="_blank">
-                        8 (926) 105-59-04</a>
-                </div>
-                <nav class="main-navigation">
-                    <ul>
-                        <li><a title="Аренда вечерних платьев" href="pages/night">Вечерние</a></li>
-                        <li><a title="Аренда бальных платьев" href="pages/bal">Бальные</a></li>
-                        <li><a title="Аренда коктельных платьев" href="pages/summer">Летние</a></li>
-                        <li><a title="Аренда зимних теплых платьев" href="pages/winter">Зимние</a></li>
-                        <li><a title="Аренда платьев для фотосесиий" href="pages/themed">Тематические</a></li>
-                        <li><a title="Аренда образов Cosplay looks" href="pages/cosplay">Образы на прокат</a></li>
-                        <li><a href="pages/accessor">Одежда и аксесуары</a></li>
-                        <li><a title="Аренда хвост русалки" href="pages/mermaid">Хит: Костюм русалки</a></li>
-                    </ul>
-                </nav>
+            </div>
+            <div class="link-whatsapp">
+                <img src="i/whatsapp.svg" alt="WhatsApp" width="30" height="30">
+                <a href="https://wa.me/79261055904" target="_blank">Написать в WhatsApp</a>
+            </div>
+            <div class="phone-box">
+                <img src="i/telephone.png" alt="WhatsApp" width="30" height="30">
+                <a class="phone" href="tel:89261055904" target="_blank">
+                    8 (926) 105-59-04</a>
+            </div>
     </header>
+    <div class="navigation">
+        <nav>
+            <ul class="navigation-menu">
+                <li class="navigation-menu-list"><a title="Аренда все платья" href="pages/catalog">Все
+                        платья</a></li>
+                <li class="navigation-menu-list"><a title="Аренда бальных платьев" href="pages/bal">Летние</a></li>
+                <li class="navigation-menu-list"><a title="Аренда коктельных платьев" href="pages/summer">Вечерние</a>
+                </li>
+                <li class="navigation-menu-list"><a title="Аренда зимних теплых платьев"
+                        href="pages/winter">Тематические</a>
+                </li>
+                <li class="navigation-menu-list"><a title="Аренда платьев для фотосесиий"
+                        href="pages/themed">Коктельные</a>
+                </li>
+                <li class="navigation-menu-list"><a title="Аренда образов Cosplay looks"
+                        href="pages/cosplay">Аксессуары</a>
+                </li>
+                <li class="navigation-menu-list"><a title="Русалка" href="mermaid.html">Костюм русалки</a></li>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <main class="container">
         <h1>Хвост русалки «Ariel Mint & Pink»</h1>
         <!--
