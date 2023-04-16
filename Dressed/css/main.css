@@ -15,7 +15,9 @@ body {
     box-sizing: border-box;
     left: 0px;
     top: 160px;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-color: #FCF6F5;  
+       background-size: cover;
+    background-position: center;
 }
 A {
     color: #000000;
@@ -36,18 +38,14 @@ h3 {
     display: none;
 }
 .topline {
-    display: flex;
-    flex-direction: row;
-    max-width: 690px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 690px;
     padding-top: 7px;
     padding-bottom: 7px;
-    background: #ffffff;
+    background: #FCF6F5;
 }
 .topline-menu {
     margin: 0; /* Обнуляем значение отступов */
-    padding: 0; /* Значение полей */
+    padding-left: 350px; /* Значение полей */
 }
 .navigation-menu{
     margin: 0; /* Обнуляем значение отступов */
@@ -59,15 +57,13 @@ h3 {
 }
 
 .topline-menu-list {
-    display: inline; /* Отображать как строчный элемент */
-    margin-left: 80px; /* Отступ слева */
+    display: inline-block; /* Отображать как строчный элемент */
+    margin-left: 10px; /* Отступ слева */
     max-width: 86px;
     color: rgba(0, 0, 0, 1);
     font-size: 12px;
-    text-align: left;
     flex: 1 1 auto;
     padding: 5px;
-    text-align: center;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
@@ -79,17 +75,17 @@ h3 {
     background-position: right center; /* change the direction of the change here */
     background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
   }
-
 .main-header {
     max-width: 690px;
-    background: #ffffff;
+    height: 80px;
+    background: #FCF6F5;
     display: flex;
     flex-direction: row;
-    gap: 20px; 
+    gap: 45px; 
 }
 .main-header-logo {
     margin-left: 20px;
-    filter: drop-shadow(0 0 0.75rem #a6c1ee);
+    filter: drop-shadow(0 0 0.75rem #2BAE66);
 }
 .topline-search {
     padding-top: 20px;
@@ -102,78 +98,72 @@ h3 {
     letter-spacing: 0%;
     text-align: center;
   }
-  .link-whatsapp {
-    padding-top: 15px;
-    margin-left: 30px;
+.link-whatsapp {
     display: flex;
-    flex-direction: row;
     max-width: 164px;
-    justify-content: flex-start;
-    align-items: flex-start;
     font-size: 12px;
-    letter-spacing: 0%;
-    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 0;
 }
 .phone-box {
-    padding-top: 15px;
-    margin-left: 30px;
     display: flex;
-    flex-direction: row;
     max-width: 164px;
-    justify-content: flex-start;
-    align-items: flex-start;
     font-size: 12px;
-    letter-spacing: 0%;
-    text-align: center;
-    
+    padding-top: 15px;
+    letter-spacing: 0;
 }
-.phone {
-    display: inline;
-    width: 100px;
-}
-.navigation{
-    background: #ffffff;
+.navigation {
+    margin-top: 20px;
     max-width: 690px;
 }
+.navigation-menu{
+    display: flex;
+    justify-content: space-between;
+}
 .navigation-menu-list {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 5px;
-    height: 35px;
     width: 90px;
+    height: 35px;
     font-size: 13px;
     text-align: center;
     text-transform: uppercase;
-    flex: 1 1 auto;
     transition: 0.5s;
-    color: white;
-    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-   }
-   .menu-list-links {
+    background-size: 200% auto;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
+    box-shadow: 0 0 20px #2BAE66;
+    border-radius: 10px   
+}
+.menu-list-links {
     padding-top: 10px;
    }
 .navigation-menu-list:hover {
     background-position: right center; /* change the direction of the change here */
     background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
   }
-
 .features{
+    max-width: 690px;
+    margin: 0;
+}
+.features-list {
+    display: flex;
     height: 150px;
-    width: 690px;
-    margin-top: 15px;
-    margin-bottom: 50px;
+    max-width: 690px;
+    margin: 15px 0 50px 0;
     padding: 0px 30px 0 15px;
-   }
-.features-item {
-    padding-top: 10px;
-    box-sizing: border-box;
-    height: 175px;
-    width: 200px;
+}
+.features-list-item {
     display: inline-block;
+    box-sizing: border-box;
     text-align: center;
+    margin-top: 50px;
+    padding-top: 10px;
+    height: 175px;
+    max-width: 200px;
     margin-left: 15px;
-    background: #ffffff;
+    background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .catalog {
@@ -184,7 +174,7 @@ h3 {
     width: 330px;
     height: 440px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-top: 80px;
 }
 .catalog-item-right {
     display: inline-block;
@@ -193,3 +183,5 @@ h3 {
     text-align: center;
     margin-left: 15px;  
 }
+
+
