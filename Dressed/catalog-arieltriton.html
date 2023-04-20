@@ -42,17 +42,9 @@
     -->
 </head>
 
-<body>
+<body class="body-catalog">
     <header>
         <!-- #topline =========================================================== -->
-        <div class="topline">
-            <ul class="topline-menu">
-                <li class="topline-menu-list"><a href="pages/rental.html">Условия проката</a></li>
-                <li class="topline-menu-list"><a href="pages/feedback">Отзывы</a></li>
-                <li class="topline-menu-list"><a href="pages/about">О нас</a></li>
-                <li class="topline-menu-list"><a href="pages/contacts">Контакты</a></li>
-            </ul>
-        </div>
         <!-- #header =========================================================== -->
         <div class="main-header">
             <a href="index.html" class="main-header-logo">
@@ -114,43 +106,108 @@
             <li><a href="index.html">Хвост русалки</a></li>
         </ul>
         -->
-        <section class="product-foto">
-            <h2 class="visually-hidden">Изображение платья</h2>
-            <p class="product-foto-full">
-                <img src="img/arieltriton.jpg" width="440" height="560" alt="«Ariel triton»">
-            </p>
-            <ul class="product-photo-preview">
-                <li>
-                    <img src="img/arieltriton-1.jpg" width="140" height="149" alt="Фото ласты">
+        <div class="product-card">
+            <section class="product-foto">
+                <h2 class="visually-hidden">Изображение платья</h2>
+                <p class="product-foto-full">
+                    <img src="img/arieltriton.jpg" width="440" height="560" alt="«Ariel triton»">
+                </p>
+                <ul class="product-photo-preview">
+                    <li>
+                        <img src="img/arieltriton-1.jpg" width="140" height="149" alt="Фото ласты">
+                    </li>
+                </ul>
+            </section>
+            <section class="product-info">
+                <h2 class="visually-hidden">Описание товара</h2>
+                <p class="product-availability">Есть в наличии</p>
+                <p class="product-article">Артикул: Ar-t</p>
+                <p class="product-text">
+                    Размерность: <span class="size-color">XS / S / M </span><br>
+                    (рост до ??? см, объем бедер до ??? см, размер ноги до ??) <br>
+                    Ткань: Яркий тянущийся стретч, внутри есть моноласта, ласту можно вытащить
+                    через молнию сбоку. <br>
+                    Состояние: 5/5 <br>
+                    Залог: 5 000 ₽ <br>
+                    Долгосрочная аренда: Возможна от 3-х дней, цена по согласованию.<br>
+                    Дополнения: Красивый мужик, чё (его размеры рост 175 вес 70 ноги 41)
+                </p>
+                <p class="product-price">
+                    <b>2 000 ₽</b>
+                    <a class="button" href="#">Заказать</a>
+                </p>
+                <h3 class="product-additional-title">В дополнение к образу:</h3>
+                <ul class="product-additional-list">
+                    <li>ТРИЗУБЕЦ</li>
+                    <li>КОРОНА</li>
+                    <li>НАХАЛЬНАЯ РОЖА</li>
+                    <li>ДОЧЬ С НОГАМИ</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="features">
+            <ul class="features-list">
+                <li class="features-list-item-left">
+                    <h3 class="features-list-title">Эксклюзивность</h3>
+                    <p>Мы создадим полный образ по Вашим пожелания! <br>Корона, парик, комплект украшений и
+                        многое
+                        другое доступно
+                        для аренды.</p>
+                    <p class="product-price">
+                        <b class="product-price-border">от 10 000 ₽</b>
+                        <a class="product-price-button" href="#">Заказать</a>
+                    </p>
+                </li>
+                <li class="features-list-item-right">
+                    <h3 class="features-list-title">Без хлопот</h3>
+                    <p>Курьер доставит желаемый образ в нужное место. <br> По согласованию возможна длительная
+                        аренда <br> в
+                        отпуск, от
+                        3-х
+                        дней.
+                    </p>
+                    <p class="product-price">
+                        <b class="product-price-border">от 5 000 ₽</b>
+                        <a class="product-price-button" href="#">Заказать</a>
+                    </p>
                 </li>
             </ul>
+        </div>
+        <section class="other">
+            <h2 class="other-title">Другие категории</h2>
+            <div class="other-list">
+                <div class="other-list-content">
+                    <a href="pages/summer">
+                        <img class="other-image" src="img/summer.jpg" width="475" height="390" alt="Летние платья">
+                        <h3 class="other-list-text"><span>Летние платья</span></h3>
+                    </a>
+                </div>
+                <div class="other-list-content">
+                    <a href="pages/night">
+                        <img class="other-image" src="img/night.jpg" width="475" height="390" alt="Вечерние платья">
+                        <h3 class="other-list-text"><span>Вечерние платья</span></h3>
+                    </a>
+                </div>
+                <div class="other-list-content">
+                    <a href="pages/cocktail">
+                        <img class="other-image" src="img/cocktail.jpg" width="475" height="390"
+                            alt="Коктельные платья">
+                        <h3 class="other-list-text"><span>Коктельные платья</span></h3>
+                    </a>
+                </div>
+                <div class="other-list-content">
+                    <a href="pages/cosplay">
+                        <img class="other-image" src="img/cosplay.jpg" width="475" height="390" alt="Cosplay">
+                        <h3 class="other-list-text"><span>Cosplay</span></h3>
+                    </a>
+                </div>
+            </div>
+            <button class="other-list-button">
+                <a href="pages/catalog">Смотреть весь каталог</a>
+            </button>
         </section>
-        <section class="product-info">
-            <h2 class="visually-hidden">Описание товара</h2>
-            <p class="product-availability">Есть в наличии</p>
-            <p class="product-article">Артикул: Ar-t</p>
-            <p class="product-text">
-                Размерность: XS / S / M <br>
-                (рост до ??? см, объем бедер до ??? см, размер ноги до ??) <br>
-                Ткань: Яркий тянущийся стретч, внутри есть моноласта, ласту можно вытащить
-                через молнию сбоку. <br>
-                Состояние: 5/5 <br>
-                Залог: 5 000 ₽ <br>
-                Долгосрочная аренда: Возможна от 3-х дней, цена по согласованию.<br>
-                Дополнения: Красивый мужик, чё (его размеры рост 175 вес 70 ноги 41)
-            </p>
-            <p class="product-price">
-                <b>2 000 ₽</b>
-                <a class="button" href="#">Заказать</a>
-            </p>
-            <h3>В дополнение к образу:</h3>
-            <ul>
-                <li>ТРИЗУБЕЦ</li>
-                <li>КОРОНА</li>
-                <li>НАХАЛЬНАЯ РОЖА</li>
-                <li>ДОЧЬ С НОГАМИ</li>
-            </ul>
-        </section>
+
     </main>
 </body>
 
