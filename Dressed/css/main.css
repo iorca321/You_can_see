@@ -46,7 +46,7 @@ h3 {
     font-size: 0px;
 }
 header {
-    width: 100%;
+    width: 1440px;
     margin-left: auto;
     margin-right: auto;
     background-color:#3a5659;
@@ -88,7 +88,7 @@ header {
     background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
   }
 .main-header {
-    max-width: 1110px;
+    width: 1110px;
     height: 110px;
     margin-left: auto;
     margin-right: auto;
@@ -113,7 +113,7 @@ header {
 }
 .link-whatsapp{
     padding-top: 15px;
-    margin-left: 350px;
+    margin-left: 550px;
 }
 .phone-box {
     display: flex; 
@@ -130,10 +130,8 @@ header {
     background-color:#3a5659;
     width: 1110px;
     height: 60px;
-    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px;
 }
 .navigation-menu{
     padding: 10px 30px 0;
@@ -155,7 +153,6 @@ header {
     /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
     box-shadow: 0 0 20px #2BAE66;
     border-radius: 10px; 
-    background-color: #fff;
     color: #2BAE66;
 }
 .menu-list-links {
