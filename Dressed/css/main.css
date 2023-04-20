@@ -8,12 +8,11 @@
 		url('../fonts/calibri.svg#calibri') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 body {
-    background-color: #b9cfc1;
-    width: 1440px;
-    height: 4130px;
-    margin: 10px auto;
+    margin: 0px auto;
     color: white;
     font-family: 'Calibri';
+    background-color: #b9cfc1;
+
     /*
     box-sizing: border-box;
     margin: 10px auto;
@@ -41,9 +40,10 @@ h3 {
     font-size: 0px;
 }
 header {
-    width: 1440px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-color:#3a5659;
 }
 .topline {
     width: 1440px;
@@ -62,13 +62,12 @@ header {
     margin: 0; /* Обнуляем значение отступов */
     padding: 0; /* Значение полей */
 }
-
 .topline-menu-list {
     display: inline-block; /* Отображать как строчный элемент */
     margin-left: 10px; /* Отступ слева */
     max-width: 86px;
-    color: rgba(0, 0, 0, 1);
     font-size: 12px;
+    background-color: #e6e5e0;
     flex: 1 1 auto;
     padding: 5px;
     transition: 0.5s;
@@ -87,7 +86,6 @@ header {
     height: 110px;
     margin-left: auto;
     margin-right: auto;
-    background-color:#3a5659;
     display: flex;
     gap: 45px; 
 }
@@ -126,8 +124,10 @@ header {
     background-color:#3a5659;
     width: 1110px;
     height: 60px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15px;
 }
 .navigation-menu{
     padding: 10px 30px 0;
@@ -138,17 +138,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90px;
+    width: 100px;
     height: 40px;
     font-size: 16px;
-    color: #c40909;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
     /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
     box-shadow: 0 0 20px #2BAE66;
-    border-radius: 10px   
+    border-radius: 10px; 
+    background-color: #fff;
+    color: #2BAE66;
 }
 .menu-list-links {
     padding-top: 10px;
@@ -158,23 +160,27 @@ header {
     background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
   }
 .container {
-    width: 1110px;
+    width: 1440px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-color: #b9cfc1;
 }
 h1 {
     font-size: 48px;
     text-transform: uppercase;
     font-weight: normal;
     color: #000000;
-    margin-top: 50px;
+    margin-top: 0px;
+    padding-top: 50px;
+    background-color: #b9cfc1;
 }
 .catalog{
     display: flex;
-    margin-top: 50px;
     width: 1110px;
     gap: 30px;
+    margin-top: 50px;
+    margin-left: 165px;
 }
 .catalog-item {
     width: 350px;
@@ -219,7 +225,6 @@ h1 {
 }
 .features{
     width: 1110px;
-    height: 740px;
     margin-top: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -227,6 +232,10 @@ h1 {
 .features-list {
     display: flex;
     margin-bottom: 90px;
+}
+.features-list-title {
+    font-size: 30px;
+    margin-top: 30px;
 }
 .features-list-item-left {
     display: inline-block;
@@ -259,9 +268,62 @@ h1 {
     text-align: center;
     padding: 0 20px;
 }
-h3 {
-    font-size: 30px;
-    margin-top: 20px;
+.other {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e5e0;
+}
+.other-title {
+    width: 440px;
+    height: 60px;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding-bottom: 50px;
+    padding-top: 60px;
+    font-weight: normal;
+    font-size: 48px;
+    color: #000;
+}
+.other-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 230px;
+    gap: 30px;
+}
+.other-list-content {
+    width: 475px;
+    height: 390px;
+}
+.other-image {
+    object-fit: cover;
+    border-radius: 20px;
+}
+.other-image:hover { 
+    filter: saturate(150%);
+}
+.other-list-text {
+    position: relative;
+    bottom: 70px;
+    left: 30px;
+    margin: 0;
+    width: 310px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: -1.2px;
+    color: #ffffff;
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+.other-list-button {
+    width: 410px;
+    height: 70px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: #56383c;
+    font-size: 20px;
+    color: #fff;
 }
 .product-info {
     background-color: #e6e5e0;
