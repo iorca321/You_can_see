@@ -28,7 +28,7 @@ body {
 }
 .wrapper {
     position: relative;
-    min-width: 320px;
+    min-width: 500px;
     min-height: 100%;
     margin: 0 auto;
     /* background-color: #ffff; */
@@ -164,6 +164,11 @@ h1 {
     height: 740px;
     background-color: #E6E5E0;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    touch-action: manipulation;
 }
 .catalog-item A{
     color: #000;
@@ -201,45 +206,35 @@ h1 {
     margin: 0;
     padding: 0;
 }
+.catalog-item:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 .features{
-    /* width: 1110px; */
+    max-width: 1440px;
     margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 100px;
+    background: url(../i/back.jpg);
+    background-size: cover;
 }
 .features-list {
     display: flex;
-    margin-bottom: 90px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 90px;
 }
 .features-list-title {
     font-size: 30px;
     margin-top: 30px;
 }
-.features-list-item-left {
-    display: inline-block;
+.features-list-item{
     box-sizing: border-box;
     text-align: center;
     width: 360px;
     height: 300px;
-    margin-left: 150px;
-    margin-right: 90px;
-    background-color: #3a5659;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 24px;
-    font-weight: 300;
-    font-style: inherit;
-    text-align: center;
-    padding: 0 20px;
-}
-.features-list-item-right {
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: center;
-    width: 360px;
-    height: 300px;
-    margin-right: 150px;
-    background-color: #3a5659;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(58, 86, 89, 0.70);
+    box-shadow: 5px 5px 20px rgba(233, 231, 231, 0.603);
     font-size: 24px;
     font-weight: 300;
     font-style: inherit;
@@ -247,26 +242,21 @@ h1 {
     padding: 0 20px;
 }
 .other {
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1440px;
     background-color: #e6e5e0;
 }
 .other-title {
-    width: 440px;
-    height: 60px;
-    margin: 0 auto;
-    /* margin-left: auto;
-    margin-right: auto; */
-    padding-bottom: 50px;
-    padding-top: 60px;
+    margin: 0;
+    padding: 50px 0;
     font-weight: normal;
+    text-align: center;
     font-size: 48px;
     color: #000;
 }
 .other-list{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 230px;
+    justify-content: center;
     gap: 30px;
 }
 .other-list-content {
@@ -295,10 +285,10 @@ h1 {
     filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 }
 .other-list-button {
+    display: block;
     width: 410px;
     height: 70px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 50px auto;
     background-color: #56383c;
     font-size: 20px;
     color: #fff;
