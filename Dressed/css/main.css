@@ -134,7 +134,10 @@ header {
     background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
   }
 .container {
-    position: relative;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     background-color: #b9cfc1;
 }
 h1 {
@@ -151,7 +154,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
