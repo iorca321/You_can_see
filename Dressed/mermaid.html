@@ -10,7 +10,9 @@
     Прокат платьев для фотосессии | Образы и платья, хвост русалки в аренду недорого в Rent a
     Look
   </title>
+  <link rel="icon" type="image" href="i/logo.png">
   <link rel="stylesheet" href="css/main.css">
+
   <meta name="description"
     content="Аренда платьев в Москве Rent a Look ☎️️ 8 (926) 105-59-04. ✨ Большой выбор красивых платьев и образов для 📷 фотосесиий, праздников, выездных фото-туров. 👗 Платья напрокат в Rent a Look." />
   <link rel="icon" type="image" href="img/logo.png" />
@@ -38,7 +40,6 @@
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <meta name="yandex-verification" content="52c59b10d41606f2">
     -->
-</head>
 
 <body>
   <div class="wrapper">
@@ -80,19 +81,19 @@
         </div>
         <nav class="navigation">
           <ul class="navigation-menu">
-            <li class="navigation-menu-list"><a title="Аренда все платья" href="pages/catalog">Все платья</a>
+            <li><a class="navigation-menu-list" title="Аренда все платья" href="pages/catalog">Все платья</a>
             </li>
-            <li class="navigation-menu-list"><a title="Аренда летних платьев" href="pages/summer">Летние</a>
+            <li><a class="navigation-menu-list" title="Аренда летних платьев" href="pages/summer">Летние</a>
             </li>
-            <li class="navigation-menu-list"><a title="Аренда вечерних платьев" href="pages/night">Вечерние</a>
+            <li><a class="navigation-menu-list" title="Аренда вечерних платьев" href="pages/night">Вечерние</a>
             </li>
-            <li class="navigation-menu-list"><a title="Аренда коктельных платьев" href="pages/cocktail">Коктельные</a>
+            <li><a class="navigation-menu-list" title="Аренда коктельных платьев" href="pages/cocktail">Коктельные</a>
             </li>
-            <li class="navigation-menu-list"><a title="Аренда образов Cosplay looks" href="pages/cosplay">Cosplay</a>
+            <li><a class="navigation-menu-list" title="Аренда образов Cosplay looks" href="pages/cosplay">Cosplay</a>
             </li>
-            <li class="navigation-menu-list"><a title="Арнеда костюма русалки" href="#">Русалка</a>
+            <li><a class="navigation-menu-list" title="Арнеда костюма русалки" href="#">Русалка</a>
             </li>
-            <li class="navigation-menu-list"><a title="Аренда аксессуаров" href="pages/access">Аксессуары</a>
+            <li><a class="navigation-menu-list" title="Аренда аксессуаров" href="pages/access">Аксессуары</a>
             </li>
             <!-- <li class="navigation-menu-list"><a title="Корзина" href="#">Корзина</a>
               </li> -->
@@ -106,7 +107,9 @@
         <article class="catalog-item">
           <p class="catalog-item-image">
             <a href="catalog-arielblue.html">
-              <img src="img/arielblue.jpg" width="350" height="535" alt="«Ariel Blue»">
+              <img class="image-cover" src="img/arielblue.jpg" onmouseover="this.src='img/arielblue-1.jpg'"
+                onmouseout="this.src='img/arielblue.jpg'" height="535" width="350" alt="«Ariel Blue»">
+              <!-- <img src="img/arielblue.jpg" width="350" height="535" alt="«Ariel Blue»"> -->
             </a>
           </p>
           <h3 class="catalog-item-title">
@@ -127,7 +130,9 @@
         <article class="catalog-item">
           <p class="catalog-item-image">
             <a href="catalog-arielgreen.html">
-              <img src="img/arielgreen.jpg" width="350" height="535" alt="«Ariel Green»">
+              <img class="image-cover" src="img/arielgreen.jpg" onmouseover="this.src='img/arielgreen-1.jpg'"
+                onmouseout="this.src='img/arielgreen.jpg'" height="535" width="350" width="350" height="535"
+                alt="«Ariel Green»">
             </a>
           </p>
           <h3 class="catalog-item-title">
@@ -148,7 +153,9 @@
         <article class="catalog-item">
           <p class="catalog-item-image">
             <a href="catalog-arielmint.html">
-              <img src="img/arielmint.jpg" width="350" height="535" alt="«Ariel Mint & Pink»">
+              <img class="image-cover" src="img/arielmint.jpg" onmouseover="this.src='img/arielmint-1.jpg'"
+                onmouseout="this.src='img/arielmint.jpg'" height="535" width="350" width="350" height="535"
+                alt="«Ariel Mint & Pink»">
             </a>
           </p>
           <h3 class="catalog-item-title">
@@ -169,7 +176,9 @@
         <article class="catalog-item">
           <p class="catalog-item-image">
             <a href="catalog-arieltriton.html">
-              <img src="img/arieltriton.jpg" width="350" height="535" alt="«Triton»">
+              <img class="image-cover" src="img/arieltriton.jpg" onmouseover="this.src='img/arieltriton-1.jpg'"
+                onmouseout="this.src='img/arieltriton.jpg'" height="535" width="350" width="350" height="535"
+                alt="«Triton»">
             </a>
           </p>
           <h3 class="catalog-item-title">
@@ -225,25 +234,27 @@
         <div class="other-list">
           <div class="other-list-content">
             <a href="pages/summer">
-              <img class="other-image" src="img/summer.jpg" width="475" height="390" alt="Летние платья">
+              <img loading="lazy" class="other-image" src="img/summer.jpg" width="475" height="390" alt="Летние платья">
               <h3 class="other-list-text"><span>Летние платья</span></h3>
             </a>
           </div>
           <div class="other-list-content">
             <a href="pages/night">
-              <img class="other-image" src="img/night.jpg" width="475" height="390" alt="Вечерние платья">
+              <img loading="lazy" class="other-image" src="img/night.jpg" width="475" height="390"
+                alt="Вечерние платья">
               <h3 class="other-list-text"><span>Вечерние платья</span></h3>
             </a>
           </div>
           <div class="other-list-content">
             <a href="pages/cocktail">
-              <img class="other-image" src="img/cocktail.jpg" width="475" height="390" alt="Коктельные платья">
+              <img loading="lazy" class="other-image" src="img/cocktail.jpg" width="475" height="390"
+                alt="Коктельные платья">
               <h3 class="other-list-text"><span>Коктельные платья</span></h3>
             </a>
           </div>
           <div class="other-list-content">
             <a href="pages/cosplay">
-              <img class="other-image" src="img/cosplay.jpg" width="475" height="390" alt="Cosplay">
+              <img loading="lazy" class="other-image" src="img/cosplay.jpg" width="475" height="390" alt="Cosplay">
               <h3 class="other-list-text"><span>Cosplay</span></h3>
             </a>
           </div>
