@@ -13,7 +13,7 @@
 body {
     margin: 0 auto;
     padding: 0;  
-    min-width: 540px;
+    min-width: 350px;
     height: 100vh;
     color: white;
     font-family: 'Calibri';
@@ -84,44 +84,68 @@ h3, p {
     /* border-left: 1px solid #888;
     border-right: 1px solid #888; */
 }
-.link-whatsapp{
+.whatsapp {
     display: flex;
     align-items: center;
     padding: 0 30px;
     gap: 10px;
 }
-.link-whatsapp a{
-    color: #ffffff;
-}
+@media (max-width: 500px) {
+    .whatsapp-texthide {
+        display: none;
+    }
+}  
 .phone-box {
     display: flex;
     align-items: center;
     padding: 0 30px;
     gap: 10px;
 }
-.phone {
-    color: #ffffff;
-}
+@media (max-width: 500px) {
+    .phone-box {
+    padding: 0 10px;
+    }
+} 
 header {
     background-color:#3a5659;
     padding-bottom: 10px;
 }
-.main-header {
+/* .main-header {
     width: 100vw;
-}
+} */
 .main-header {
     max-width: 1100px;
     margin: 0 auto;
     gap: 50px; 
 }
-.main-header-container {
+.logo-container {
     display: flex;
     justify-content: center;
 }
-.main-header-logo {
+/* .main-header-logo {
     padding-top: 10px;
     filter: drop-shadow(0px 0px 0.50rem #2BAE66); 
+} */
+.logo-container-large {
+    padding-top: 10px;
+    filter: drop-shadow(0px 0px 0.50rem #2BAE66);
 }
+.logo-container-small {
+    display: none;
+    padding-top: 10px;
+    filter: drop-shadow(0px 0px 0.50rem #2BAE66);
+}
+@media (max-width: 540px) {
+    .logo-container-small {
+        display: flex;
+    }
+}
+@media (max-width: 540px) {
+    .logo-container-large {
+        display: none;
+    }
+}
+
 .navigation {
     background-color:#3a5659;
 }
@@ -258,6 +282,9 @@ header {
     padding: 0;
     gap: 90px;
 }
+.features-list p {
+    padding: 15px 10px;
+}
 .features-list-title {
     font-size: 30px;
     margin-top: 30px;
@@ -320,7 +347,6 @@ header {
 }
 .other-list-button {
     display: block;
-    width: 410px;
     height: 70px;
     margin: 50px auto;
     background-color: #56383c;
