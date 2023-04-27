@@ -26,10 +26,9 @@ var tns=function(){var t=window,Ai=t.requestAnimationFrame||t.webkitRequestAnima
 
 var slider = tns({
     container: ".my-slider",
-    autoWidth: true,
+    fixedWidth: 540,
     controlsContainer: "#custom-control",
     items: 1,
-    gutter: 0,
     controlsPosition: "bottom",
     slideBy: 1,
     mouseDrag: true,
@@ -37,6 +36,16 @@ var slider = tns({
     loop: true,
     lazyload: false,
     autoplayButtonOutput: false,
+
+    navContainer: "#customize-thumbnails",
+    navAsThumbnails: true,
+
+
+
+
+
+
+
     // responsive: {
     //   0: {
     //     items: 1,
