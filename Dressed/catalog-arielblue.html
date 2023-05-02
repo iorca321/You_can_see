@@ -13,7 +13,7 @@
     <link rel="icon" type="image" href="i/logo.png" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <meta name="description"
         content="Аренда платьев в Москве Rent a Look ☎️️ 8 (926) 105-59-04. ✨ Большой выбор красивых платьев и образов для 📷 фотосесиий, праздников, выездных фото-туров. 👗 Платья напрокат в Rent a Look." />
     <link rel="canonical" href="#" />
@@ -49,9 +49,7 @@
             <div class="header-left">
                 <a class="whatsapp" href="https://wa.me/79261055904" target="_blank">
                     <img src="i/whatsapp.png" alt="Позвонить" width="33" height="33">
-                    <span>Написать <span class="whatsapp-texthide">в What’s App</span></span>
-                </a>
-
+                    <span>Написать <span class="whatsapp-texthide">в What’s App</span></span></a>
             </div>
             <div class="header-center">
                 <div class="heared-top-search">
@@ -118,49 +116,14 @@
             <div class="product-card">
                 <section class="product-foto">
                     <h2 class="visually-hidden">Изображения платья</h2>
-                    <!-- <p class="product-foto-full">
-                        <a href="img/arielblue.jpg">
-                            <img class="image-cover" src="img/arielblue.jpg" width="540" height="800"
-                                alt="«Ariel Blue»">
-                        </a>
-                    </p> -->
-                    <!-- <ul class="product-photo-preview">
-                        <li>
-                            <img class="product-photo-preview-list" src="img/arielblue-1.jpg" width="100" height="100"
-                                alt="Фото лёжа">
-                        </li>
-                        <li>
-                            <img class="product-photo-preview-list" src="img/arielblue-2.jpg" width="100" height="100"
-                                alt="Фото стоя">
-                        </li>
-                        <li>
-                            <img class="product-photo-preview-list" src="img/arielblue-3.jpg" width="100" height="100"
-                                alt="Фото сидя">
-                        </li>
-                        <li>
-                            <img class="product-photo-preview-list" src="img/arielblue-4.jpg" width="100" height="100"
-                                alt="Фото сидя">
-                        </li>
-                    </ul> -->
-
                     <!-- SLIDER -->
                     <div class="foto-slider">
                         <div class="my-slider">
-                            <a href="img/large.jpg">
-                                <img src="img/arielblue.jpg" width="540" height="800" alt="фото стоя">
-                            </a>
-                            <a href="img/large.jpg">
-                                <img src="img/arielblue-1.jpg" width="540" height="800" alt="фото лёжа">
-                            </a>
-                            <a href="img/large.jpg">
-                                <img src="img/arielblue-2.jpg" width="540" height="800" alt="фото сидя">
-                            </a>
-                            <a href="img/large.jpg">
-                                <img src="img/arielblue-3.jpg" width="540" height="800" alt="фото сидя 2">
-                            </a>
-                            <a href="img/large.jpg">
-                                <img src="img/arielblue-4.jpg" width="540" height="800" alt="фото лёжа 2">
-                            </a>
+                            <img src="img/arielblue.jpg" class="minimized" width="540" height="800" alt="фото стоя">
+                            <img src="img/arielblue-1.jpg" class="minimized" width="540" height="800" alt="фото лёжа">
+                            <img src="img/arielblue-2.jpg" class="minimized" width="540" height="800" alt="фото сидя">
+                            <img src="img/arielblue-3.jpg" class="minimized" width="540" height="800" alt="фото сидя 2">
+                            <img src="img/arielblue-4.jpg" class="minimized" width="540" height="800" alt="фото лёжа 2">
                         </div>
                         <ul class="control" id="custom-control">
                             <li class="prev">
@@ -173,23 +136,23 @@
                         <ul class="product-photo-preview" id="customize-thumbnails">
                             <li>
                                 <img class="product-photo-preview-list" src="img/arielblue.jpg" alt="фото стоя"
-                                    width="100" height="100">
+                                    width="100" height="120">
                             </li>
                             <li>
                                 <img class="product-photo-preview-list" src="img/arielblue-1.jpg" alt="фото лёжа"
-                                    width="100" height="100">
+                                    width="100" height="120">
                             </li>
                             <li>
                                 <img class="product-photo-preview-list" src="img/arielblue-2.jpg" alt="фото сидя"
-                                    width="100" height="100">
+                                    width="100" height="120">
                             </li>
                             <li>
                                 <img class="product-photo-preview-list" src="img/arielblue-3.jpg" alt="фото сидя 2"
-                                    width="100" height="100">
+                                    width="100" height="120">
                             </li>
                             <li>
                                 <img class="visually-hidden" src="img/arielblue-4.jpg" alt="фото лёжа 2" width="100"
-                                    height="100">
+                                    height="120">
                             </li>
                         </ul>
                     </div>
@@ -244,7 +207,7 @@
                         <p class="product-price-features">
                             <b class="product-price-border">от 10 000 ₽</b>
                             <a class="product-price-button"
-                                href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20х%20русалки%20Ariel%20Blue.">Заказать</a>
+                                href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Русалка%20под%20ключ.">Заказать</a>
                         </p>
                     </li>
                     <li class="features-list-item">
@@ -254,17 +217,20 @@
                         <p class="product-price-features">
                             <b class="product-price-border">от 5 000 ₽</b>
                             <a class="product-price-button"
-                                href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20хвост%20русалки%20Ariel%20Blue.">Заказать</a>
+                                href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Анимация%20в%20костюме%20Русалки.">Заказать</a>
                         </p>
                     </li>
                 </ul>
             </div>
+
             <section class="other">
                 <h2 class="other-title">Другие категории</h2>
                 <div class="other-list">
                     <div class="other-list-content">
                         <a href="pages/summer">
                             <img loading="lazy" class="other-image" src="img/summer.jpg" width="475" height="390"
+                                alt="Летние платья">
+                            <img loading="lazy" class="other-image-small" src="img/summer.jpg" width="350" height="290"
                                 alt="Летние платья">
                             <h3 class="other-list-text"><span>Летние платья</span></h3>
                         </a>
@@ -273,6 +239,9 @@
                         <a href="pages/night">
                             <img loading="lazy" class="other-image" src="img/night.jpg" width="475" height="390"
                                 alt="Вечерние платья">
+                            <img loading="lazy" class="other-image-small" src="img/night.jpg" width="350" height="290"
+                                alt="Вечерние платья">
+
                             <h3 class="other-list-text"><span>Вечерние платья</span></h3>
                         </a>
                     </div>
@@ -280,6 +249,9 @@
                         <a href="pages/cocktail">
                             <img loading="lazy" class="other-image" src="img/cocktail.jpg" width="475" height="390"
                                 alt="Коктельные платья">
+                            <img loading="lazy" class="other-image-small" src="img/cocktail.jpg" width="350"
+                                height="290" alt="Коктельные платья">
+
                             <h3 class="other-list-text"><span>Коктельные платья</span></h3>
                         </a>
                     </div>
@@ -287,6 +259,9 @@
                         <a href="pages/cosplay">
                             <img loading="lazy" class="other-image" src="img/cosplay.jpg" width="475" height="390"
                                 alt="Cosplay">
+                            <img loading="lazy" class="other-image-small" src="img/cosplay.jpg" width="350" height="290"
+                                alt="Cosplay">
+
                             <h3 class="other-list-text"><span>Cosplay</span></h3>
                         </a>
                     </div>
@@ -295,6 +270,7 @@
                     <a href="pages/catalog">Смотреть весь каталог</a>
                 </button>
             </section>
+            <script type="text/javascript" src="libs/minimized.js"></script>
             <script src="libs/tiny-slider.js"></script>
         </main>
         <footer>
