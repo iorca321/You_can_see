@@ -185,7 +185,6 @@ header {
             display: block;
         }
  }
-
 .container {
     max-width: 1440px;
     margin-left: auto;
@@ -216,10 +215,6 @@ header {
 }
 .catalog-item A{
     color: #000;
-}
-.clean {
-    position:absolute;
-    
 }
 .catalog-item-title {
     font-size: 30px;
