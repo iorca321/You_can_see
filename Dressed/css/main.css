@@ -6,11 +6,10 @@ body {
     color: white;
     font-family: 'Open Sans','Roboto', sans-serif;
     background-color: #FFFF;
-    /*w
+    /*
     box-sizing: border-box;
-    margin: 10px auto;
-    background-color: #b9cfc1;  
-    background-size: cover;
+                margin: 10px auto;
+                background-color: #b9cfc1;      background-size: cover;
     background-position: center; */
 }
 .body-catalog {
