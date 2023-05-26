@@ -51,9 +51,8 @@ p {
   font-size: 0px;
 }
 header {
-  background: url(..//img/header.jpg);
+  background: url(..//i/header.jpg) repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   padding-bottom: 10px;
 }
 .header-top {
@@ -130,8 +129,6 @@ header {
   .logo-container-small {
     display: flex;
   }
-}
-@media (max-width: 540px) {
   .logo-container-large {
     display: none;
   }
@@ -149,6 +146,10 @@ header {
   .navigation-menu,
   .navigation-menu li:first-child {
     display: block;
+  }
+  .navigation-menu li a {
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0), 0 0 2em #e0e6e4;
   }
 }
 .navigation-menu-list {
@@ -273,9 +274,9 @@ header {
 }
 @media (max-width: 1032px) {
   .features {
-    background: url(../i/back-mini.jpg);
+    background: #111217 url(../i/back.jpg) no-repeat 50% -45px;
     background-size: cover;
-    background-repeat: no-repeat;
+    padding: 10px 15px;
   }
 }
 .features-list {
