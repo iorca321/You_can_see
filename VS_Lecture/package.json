@@ -1,0 +1,9 @@
+{
+    "name": "VS-Lecture",
+    "version": "1.0.0",
+    "description": "Gulp_version",
+    "author": "Front Rosta",
+    "devDependencies": {
+        "gulp": "^4.0.2"
+    }
+}
