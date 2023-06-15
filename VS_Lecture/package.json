@@ -6,6 +6,7 @@
     "devDependencies": {
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^8.0.0",
-        "gulp-cssbeautify": "^3.0.1"
+        "gulp-cssbeautify": "^3.0.1",
+        "gulp-strip-css-comments": "^2.0.0"
     }
 }
