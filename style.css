@@ -39,7 +39,7 @@ a:visited {
   
 .header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
   
@@ -47,6 +47,7 @@ a:visited {
   font-weight: bold;
   font-size: 24px;
   margin: 0;
+  margin-right: 30px;
 }
   
 .button {
@@ -67,9 +68,9 @@ a:visited {
 }
   
 .image {
-  width: 80%;
+  width: 100%;
   display: block;
-  margin: 60px auto 50px;
+  margin: 60px auto;
   animation-delay: 5s;
 }
   
@@ -84,6 +85,6 @@ a:visited {
 .footer {
   font-size: 16px;
   margin: 0;
-  position: absolute;
+  position: initial;
   bottom: 36px;
 }
