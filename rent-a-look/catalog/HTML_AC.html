@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../css/main.min.css">
     <link rel="stylesheet" href="../css/tiny-slider.min.css">
     <script src="../libs/script.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> Прямая ссылка для слайдеров-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap"
@@ -27,10 +29,10 @@
         content="Прокат платьев для фотосессии | Образы и платья в аренду недорого в Rent a Look" />
     <meta property="og:description"
         content="Аренда платьев в Москве Rent a Look ☎️️ 8 (926) 105-59-04. ✨ Большой выбор красивых платьев и образов для 📷 фотосесиий, праздников, выездных фото-туров. 👗 Платья напрокат в Rent a Look." />
-    <meta property="og:url" content="#" />
+    <meta property="og:url" content="https://iorca321.github.io/You_can_see/rent-a-look/pages/index.html" />
     <meta property="og:site_name" content="Rent a look" />
     <meta property="article:modified_time" content="2023-04-27T16:24:25+00:00" />
-    <meta property="og:image" content="https://iorca321.github.io/You_can_see/Dressed/i/back.jpg" />
+    <meta property="og:image" content="https://iorca321.github.io/You_can_see/rent-a-look/img/i/back.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <!--
     МЕТРИКИ
@@ -54,7 +56,7 @@
                 <div class="header-left">
                     <a class="whatsapp" href="https://wa.me/79261055904" target="_blank">
                         <img src="../img/i/whatsapp.png" alt="Позвонить" width="33" height="33">
-                        <span>Написать <span class="whatsapp-texthide">в What’s App</span></span>
+                        <span>Написать<span class="whatsapp-texthide">в What’s App</span></span>
                     </a>
                 </div>
                 <div class="header-center">
@@ -91,7 +93,7 @@
                     <ul class="navigation-menu">
                         <li><a class="navigation-menu-list" title="Развернуть меню" href="#">Меню</a>
                         </li>
-                        <li><a class="navigation-menu-list" title="Аренда все платья" href="../pages/catalog/html">Все
+                        <li><a class="navigation-menu-list" title="Аренда все платья" href="../pages/catalog.html">Все
                                 платья</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда летних платьев"
@@ -110,156 +112,152 @@
                                 href="../pages/mermaid.html">Русалка</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда аксессуаров"
-                                href="../pages/access">Аксессуары</a>
+                                href="../pages/access.html">Аксессуары</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </header>
+        </header><!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Испытание: редактирование профиля</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Профиль</h1>
+
+    <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
+        Ваш пол:
+        <label><input type="radio" name="gender" value="male"> Мужской</label>
+        <label><input type="radio" name="gender" value="female" checked> Женский</label>
+        <br>
+        Месяц и год рождения: <br>
+        <select name="mounth">
+            <option value="Январь">Январь</option>
+            <option value="Март">Март</option>
+        </select>
+        <select name="year">
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+        </select>
+        <br>
+        Знакомые технологии: <br>
+        <select name="tech" multiple>
+            <option value="HTML">HTML</option>
+            <option value="CSS" selected>CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Node.js">Node.js</option>
+        </select>
+        <br>
+        Фото:
+        <input type="file" name="foto">
+        <br>
+        <input type="submit" value="Сохранить">
+
+    </form>
+</body>
+
+</html>
 
 
-        <!DOCTYPE html>
-        <html>
-        
-        <head>
-            <meta charset="utf-8">
-            <title>Испытание: редактирование профиля</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        
-        <body>
-            <h1>Профиль</h1>
-        
-            <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
-                Ваш пол:
-                <label><input type="radio" name="gender" value="male"> Мужской</label>
-                <label><input type="radio" name="gender" value="female" checked> Женский</label>
-                <br>
-                Месяц и год рождения: <br>
-                <select name="mounth">
-                    <option value="Январь">Январь</option>
-                    <option value="Март">Март</option>
-                </select>
-                <select name="year">
-                    <option value="1990">1990</option>
-                    <option value="1991">1991</option>
-                    <option value="1992">1992</option>
-                </select>
-                <br>
-                Знакомые технологии: <br>
-                <select name="tech" multiple>
-                    <option value="HTML">HTML</option>
-                    <option value="CSS" selected>CSS</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="Node.js">Node.js</option>
-                </select>
-                <br>
-                Фото:
-                <input type="file" name="foto">
-                <br>
-                <input type="submit" value="Сохранить">
-        
-            </form>
-        </body>
-        
-        </html>
-
-
-        <section class="features">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <ul class="features-list">
-                <li class="features-list-item">
-                    <h3 class="features-list-title">Эксклюзивность</h3>
-                    <p>Мы создадим полный образ по Вашим пожелания! <br>Корона, парик, комплект украшений и многое
-                        другое
-                        доступно
-                        для аренды.</p>
-                </li>
-                <li class="features-list-item">
-                    <h3 class="features-list-title">Без хлопот</h3>
-                    <p>Курьер доставит желаемый образ в нужное место. <br> По согласованию возможна длительная
-                        аренда <br> в
-                        отпуск, от
-                        3-х
-                        дней.
-                    </p>
-                </li>
-            </ul>
-            <ul class="features-list">
-                <li class="features-list-item">
-                    <h3 class="features-list-title">Сопровождение</h3>
-                    <p>Русалка "под ключ" - выезд специалиста, укладка с накладными длинными косами, несмываемый
-                        грим <br> с
-                        блестками
-                        и наклейками.</p>
-                </li>
-                <li class="features-list-item">
-                    <h3 class="features-list-title">Анимация</h3>
-                    <p>Нужен актёр в костюме? Девушка-русалка модельной внешности станет частью Вашего мероприятия.
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <section class="other">
-            <h2 class="other-title">Другие категории</h2>
-            <div class="other-list">
-                <div class="other-list-content">
-                    <a href="../pages/summer.html">
-                        <img loading="lazy" class="other-image" src="../img/summer.jpg" width="475" height="390"
-                            alt="Летние платья">
-                        <img loading="lazy" class="other-image-small" src="../img/summer.jpg" width="350" height="290"
-                            alt="Летние платья">
-                        <h3 class="other-list-text"><span>Летние платья</span></h3>
-                    </a>
-                </div>
-                <div class="other-list-content">
-                    <a href="../pages/night.html">
-                        <img loading="lazy" class="other-image" src="../img/night.jpg" width="475" height="390"
-                            alt="Вечерние платья">
-                        <img loading="lazy" class="other-image-small" src="../img/night.jpg" width="350" height="290"
-                            alt="Вечерние платья">
-                        <h3 class="other-list-text"><span>Вечерние платья</span></h3>
-                    </a>
-                </div>
-                <div class="other-list-content">
-                    <a href="../pages/cocktail.html">
-                        <img loading="lazy" class="other-image" src="../img/cocktail.jpg" width="475" height="390"
-                            alt="Коктельные платья">
-                        <img loading="lazy" class="other-image-small" src="../img/cocktail.jpg" width="350" height="290"
-                            alt="Коктельные платья">
-                        <h3 class="other-list-text"><span>Коктельные платья</span></h3>
-                    </a>
-                </div>
-                <div class="other-list-content">
-                    <a href="../pages/cosplay.html">
-                        <img loading="lazy" class="other-image" src="../img/cosplay.jpg" width="475" height="390"
-                            alt="Cosplay">
-                        <img loading="lazy" class="other-image-small" src="../img/cosplay.jpg" width="350" height="290"
-                            alt="Cosplay">
-                        <h3 class="other-list-text"><span>Cosplay</span></h3>
-                    </a>
-                </div>
-            </div>
-            <div class="other-list-button">
-                <a href="#part1">В начало</a>
-            </div>
-        </section>
-        </main>
-        <footer>
-            <div class="footer-container">
-                <ul class="bottomline-menu">
-                    <li class="bottomline-menu-list"><a href="../pages/profile.html">Личный кабинет</a></li>
-                    <li class="bottomline-menu-list"><a href="../pages/rental.html">Условия проката</a></li>
-                    <li class="bottomline-menu-list"><a href="../pages/feedback">Отзывы</a></li>
-                    <li class="bottomline-menu-list"><a href="../pages/about">О нас</a></li>
-                </ul>
-            </div>
-            <div class="footer-copyright">
-                <p>Copyright © 2023, Rent-a-look.ru. All Rights Reserved.</p>
-                <p>Дизайн и разработка сайта Front Rosta.</p>
-            </div>
-        </footer>
+<section class="features">
+    <h2 class="visually-hidden">Преимущества</h2>
+    <ul class="features-list">
+        <li class="features-list-item">
+            <h3 class="features-list-title">Эксклюзивность</h3>
+            <p>Мы создадим полный образ по Вашим пожелания! <br>Корона, парик, комплект украшений и многое
+                другое
+                доступно
+                для аренды.</p>
+        </li>
+        <li class="features-list-item">
+            <h3 class="features-list-title">Без хлопот</h3>
+            <p>Курьер доставит желаемый образ в нужное место. <br> По согласованию возможна длительная
+                аренда <br> в
+                отпуск, от
+                3-х
+                дней.
+            </p>
+        </li>
+    </ul>
+    <ul class="features-list">
+        <li class="features-list-item">
+            <h3 class="features-list-title">Сопровождение</h3>
+            <p>Русалка "под ключ" - выезд специалиста, укладка с накладными длинными косами, несмываемый
+                грим <br> с
+                блестками
+                и наклейками.</p>
+        </li>
+        <li class="features-list-item">
+            <h3 class="features-list-title">Анимация</h3>
+            <p>Нужен актёр в костюме? Девушка-русалка модельной внешности станет частью Вашего мероприятия.
+            </p>
+        </li>
+    </ul>
+</section>
+<section class="other">
+    <h2 class="other-title">Другие категории</h2>
+    <div class="other-list">
+        <div class="other-list-content">
+            <a href="../pages/summer.html">
+                <img loading="lazy" class="other-image" src="../img/summer.jpg" width="475" height="390"
+                    alt="Летние платья">
+                <img loading="lazy" class="other-image-small" src="../img/summer.jpg" width="350" height="290"
+                    alt="Летние платья">
+                <h3 class="other-list-text"><span>Летние платья</span></h3>
+            </a>
+        </div>
+        <div class="other-list-content">
+            <a href="../pages/night.html">
+                <img loading="lazy" class="other-image" src="../img/night.jpg" width="475" height="390"
+                    alt="Вечерние платья">
+                <img loading="lazy" class="other-image-small" src="../img/night.jpg" width="350" height="290"
+                    alt="Вечерние платья">
+                <h3 class="other-list-text"><span>Вечерние платья</span></h3>
+            </a>
+        </div>
+        <div class="other-list-content">
+            <a href="../pages/cocktail.html">
+                <img loading="lazy" class="other-image" src="../img/cocktail.jpg" width="475" height="390"
+                    alt="Коктельные платья">
+                <img loading="lazy" class="other-image-small" src="../img/cocktail.jpg" width="350" height="290"
+                    alt="Коктельные платья">
+                <h3 class="other-list-text"><span>Коктельные платья</span></h3>
+            </a>
+        </div>
+        <div class="other-list-content">
+            <a href="../pages/cosplay.html">
+                <img loading="lazy" class="other-image" src="../img/cosplay.jpg" width="475" height="390" alt="Cosplay">
+                <img loading="lazy" class="other-image-small" src="../img/cosplay.jpg" width="350" height="290"
+                    alt="Cosplay">
+                <h3 class="other-list-text"><span>Cosplay</span></h3>
+            </a>
+        </div>
     </div>
+    <div class="other-list-button">
+        <a href="#part1">В начало</a>
+    </div>
+</section>
+</main> <!-- пока так -->
+<footer>
+    <div class="footer-container">
+        <ul class="bottomline-menu">
+            <li class="bottomline-menu-list"><a href="../pages/profile.html">Личный кабинет</a></li>
+            <li class="bottomline-menu-list"><a href="../pages/rental.html">Условия проката</a></li>
+            <li class="bottomline-menu-list"><a href="../pages/feedback.html">Отзывы</a></li>
+            <li class="bottomline-menu-list"><a href="../pages/about.html">О нас</a></li>
+        </ul>
+    </div>
+    <div class="footer-copyright">
+        <p>Copyright © 2023, Rent-a-look.ru. All Rights Reserved.</p>
+        <p>Дизайн и разработка сайта Front Rosta.</p>
+    </div>
+</footer>
+</div> <!-- wrapper -->
 </body>
 
 </html>

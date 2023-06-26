@@ -67,8 +67,9 @@ p {
 }
 
 header {
-    background: url(../img/i/header.jpg) repeat;
+    background: url(../img/i/header-max.jpeg) no-repeat;
     background-size: cover;
+    background-position: center;
     padding-bottom: 10px;
 }
 
