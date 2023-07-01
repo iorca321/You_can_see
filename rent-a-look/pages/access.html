@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <title>
-        Прокат платьев для фотосессии Украшения и аксессуры | Образы и платья, хвост русалки в аренду недорого в Rent a
+        Прокат платьев для фотосессии Cosplay looks | Образы и платья, хвост русалки в аренду недорого в Rent a
         Look
     </title>
     <link rel="shortcut icon" href="../img/i/logo.png">
@@ -47,6 +47,36 @@
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <meta name="yandex-verification" content="52c59b10d41606f2">
     -->
+    <script>
+        Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
+
+            switch (operator) {
+                case '==':
+                    return (v1 == v2) ? options.fn(this) : options.inverse(this);
+                case '===':
+                    return (v1 === v2) ? options.fn(this) : options.inverse(this);
+                case '!=':
+                    return (v1 != v2) ? options.fn(this) : options.inverse(this);
+                case '!==':
+                    return (v1 !== v2) ? options.fn(this) : options.inverse(this);
+                case '<':
+                    return (v1 < v2) ? options.fn(this) : options.inverse(this);
+                case '<=':
+                    return (v1 <= v2) ? options.fn(this) : options.inverse(this);
+                case '>':
+                    return (v1 > v2) ? options.fn(this) : options.inverse(this);
+                case '>=':
+                    return (v1 >= v2) ? options.fn(this) : options.inverse(this);
+                case '&&':
+                    return (v1 && v2) ? options.fn(this) : options.inverse(this);
+                case '||':
+                    return (v1 || v2) ? options.fn(this) : options.inverse(this);
+                default:
+                    return options.inverse(this);
+            }
+        });
+    </script>
+
 </head>
 
 <body>
@@ -119,35 +149,65 @@
             </div>
         </header>
 <main class="container">
-    <h1> Аренда аксессуров </h1>
+    <h1> Cosplay looks в аренду </h1>
     <div class="catalog">
 
         <article class="catalog-item">
             <p class="catalog-item-image">
-                <a href="../catalog/catalog-corpse_bride.html">
-                    <img class="image-cover" src="../img/corpse_bride.webp"
-                        onmouseover="this.src='../img/corpse_bride-1.webp'"
-                        onmouseout="this.src='../img/corpse_bride.webp'" height="535" width="350"
-                        alt="Corpse bride">
+                <a href="../catalog/catalog-miss_universe.html">
+                    <img class="image-cover" src="../img/miss_universe.webp"
+                        onmouseover="this.src='../img/miss_universe-1.webp'"
+                        onmouseout="this.src='../img/miss_universe.webp'" height="535" width="350"
+                        alt="Miss Universe">
                 </a>
             </p>
             <h3 class="catalog-item-title">
-                <a href="../catalog/catalog-corpse_bride.html">
+                <a href="../catalog/catalog-miss_universe.html">
                     <span class="catalog-category">
                         Образ
                         <br></span>
-                    <span class="catalog-title"> Corpse bride </span>
+                    <span class="catalog-title"> Miss Universe </span>
                 </a>
             </h3>
             <p class="catalog-item-size">
                 <span class="party-">
-                    Размерность: S / M <br>
+                    Размерность:  <br>
                     для вечеринки (нет),
                     грим (нет)
                 </span>
             <p class="catalog-item-price">
-                <b> ₽ 3 000 </b>
-                <b class="catalog-item-price_old">₽ 7 500 </b>
+                <b> ₽ 1 000 </b>
+                <b class="catalog-item-price_old">₽ 2 500 </b>
+                <a class="button" href="#"></a>
+            </p>
+        </article>
+
+        <article class="catalog-item">
+            <p class="catalog-item-image">
+                <a href="../catalog/catalog-evening_star.html">
+                    <img class="image-cover" src="../img/evening_star.webp"
+                        onmouseover="this.src='../img/evening_star-1.webp'"
+                        onmouseout="this.src='../img/evening_star.webp'" height="535" width="350"
+                        alt="Evening Star">
+                </a>
+            </p>
+            <h3 class="catalog-item-title">
+                <a href="../catalog/catalog-evening_star.html">
+                    <span class="catalog-category">
+                        Образ
+                        <br></span>
+                    <span class="catalog-title"> Evening Star </span>
+                </a>
+            </h3>
+            <p class="catalog-item-size">
+                <span class="party-">
+                    Размерность:  <br>
+                    для вечеринки (нет),
+                    грим (нет)
+                </span>
+            <p class="catalog-item-price">
+                <b> ₽ 2 000 </b>
+                <b class="catalog-item-price_old">₽ 4 500 </b>
                 <a class="button" href="#"></a>
             </p>
         </article>

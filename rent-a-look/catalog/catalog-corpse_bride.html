@@ -47,6 +47,36 @@
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <meta name="yandex-verification" content="52c59b10d41606f2">
     -->
+    <script>
+        Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
+
+            switch (operator) {
+                case '==':
+                    return (v1 == v2) ? options.fn(this) : options.inverse(this);
+                case '===':
+                    return (v1 === v2) ? options.fn(this) : options.inverse(this);
+                case '!=':
+                    return (v1 != v2) ? options.fn(this) : options.inverse(this);
+                case '!==':
+                    return (v1 !== v2) ? options.fn(this) : options.inverse(this);
+                case '<':
+                    return (v1 < v2) ? options.fn(this) : options.inverse(this);
+                case '<=':
+                    return (v1 <= v2) ? options.fn(this) : options.inverse(this);
+                case '>':
+                    return (v1 > v2) ? options.fn(this) : options.inverse(this);
+                case '>=':
+                    return (v1 >= v2) ? options.fn(this) : options.inverse(this);
+                case '&&':
+                    return (v1 && v2) ? options.fn(this) : options.inverse(this);
+                case '||':
+                    return (v1 || v2) ? options.fn(this) : options.inverse(this);
+                default:
+                    return options.inverse(this);
+            }
+        });
+    </script>
+
 </head>
 
 <body>
@@ -132,7 +162,7 @@
                     <img src="../img/corpse_bride.jpg" class="minimized" width="540" height="800" alt="фото образа">
                     <img src="../img/corpse_bride-1.jpg" class="minimized"
                         width="540" height="800" alt="фото образа">
-                    <img src="../img/corpse_bride.jpg" class="minimized"
+                    <img src="../img/corpse_bride-2.jpg" class="minimized"
                         width="540" height="800" alt="фото образа">
                     <img src="../img/corpse_bride.jpg" class="minimized"
                         width="540" height="800" alt="фото образа">
@@ -157,7 +187,7 @@
                     </li>
                     <li>
                         <img class="product-photo-preview-list"
-                            src="../img/corpse_bride.jpg"
+                            src="../img/corpse_bride-2.jpg"
                             alt="фото платья" width="100" height="120">
                     </li>
                     <li>
@@ -173,10 +203,10 @@
         <section class="product-info">
             <h2 class="visually-hidden">Описание товара</h2>
             <p class="product-availability">Есть в наличии</p>
-            <p class="product-article">Артикул: Cp-cb</p>
+            <p class="product-article">Артикул: cp-cb</p>
             <p class="product-text">
                 <strong>Размерность:<span class="size-color"> S / M </span></strong><br>
-                Подходит для вечеринки.
+                Не подходит для вечеринки.
                 <br>
                 Грим
                 не нужен.
@@ -191,7 +221,7 @@
                 Залог: 00 ₽<br>
             </p>
             <p class="product-price">
-                <b class="product-price-border">3 000 ₽</b>
+                <b class="product-price-border">300 ₽</b>
                 <a class="product-price-button"
                     href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20образ%20Corpse bride.">Заказать</a>
             </p>
