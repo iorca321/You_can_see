@@ -47,36 +47,6 @@
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <meta name="yandex-verification" content="52c59b10d41606f2">
     -->
-    <script>
-        Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
-
-            switch (operator) {
-                case '==':
-                    return (v1 == v2) ? options.fn(this) : options.inverse(this);
-                case '===':
-                    return (v1 === v2) ? options.fn(this) : options.inverse(this);
-                case '!=':
-                    return (v1 != v2) ? options.fn(this) : options.inverse(this);
-                case '!==':
-                    return (v1 !== v2) ? options.fn(this) : options.inverse(this);
-                case '<':
-                    return (v1 < v2) ? options.fn(this) : options.inverse(this);
-                case '<=':
-                    return (v1 <= v2) ? options.fn(this) : options.inverse(this);
-                case '>':
-                    return (v1 > v2) ? options.fn(this) : options.inverse(this);
-                case '>=':
-                    return (v1 >= v2) ? options.fn(this) : options.inverse(this);
-                case '&&':
-                    return (v1 && v2) ? options.fn(this) : options.inverse(this);
-                case '||':
-                    return (v1 || v2) ? options.fn(this) : options.inverse(this);
-                default:
-                    return options.inverse(this);
-            }
-        });
-    </script>
-
 </head>
 
 <body>
@@ -123,14 +93,15 @@
                     <ul class="navigation-menu">
                         <li><a class="navigation-menu-list" title="Развернуть меню" href="#">Меню</a>
                         </li>
-                        <li><a class="navigation-menu-list" title="Аренда все платья" href="../pages/catalog.html">Все
+                        <li><a class="navigation-menu-list" title="Аренда все платья"
+                                href="../pages/catalog_full.html">Все
                                 платья</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда летних платьев"
                                 href="../pages/summer.html">Летние</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда вечерних платьев"
-                                href="../pages/night/html">Вечерние</a>
+                                href="../pages/night.html">Вечерние</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда коктельных платьев"
                                 href="../pages/cocktail.html">Коктельные</a>
@@ -157,7 +128,7 @@
                 <a href="../catalog/catalog-corpse_bride.html">
                     <img class="image-cover" src="../img/corpse_bride.webp"
                         onmouseover="this.src='../img/corpse_bride-1.webp'"
-                        onmouseout="this.src='../img/corpse_bride.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/corpse_bride.webp'" height="482" width="315"
                         alt="Corpse bride">
                 </a>
             </p>
@@ -187,7 +158,7 @@
                 <a href="../catalog/catalog-maleficent.html">
                     <img class="image-cover" src="../img/maleficent.webp"
                         onmouseover="this.src='../img/maleficent-1.webp'"
-                        onmouseout="this.src='../img/maleficent.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/maleficent.webp'" height="482" width="315"
                         alt="Maleficent">
                 </a>
             </p>
@@ -217,7 +188,7 @@
                 <a href="../catalog/catalog-enchantress.html">
                     <img class="image-cover" src="../img/enchantress.webp"
                         onmouseover="this.src='../img/enchantress-1.webp'"
-                        onmouseout="this.src='../img/enchantress.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/enchantress.webp'" height="482" width="315"
                         alt="Enchantress">
                 </a>
             </p>
@@ -247,7 +218,7 @@
                 <a href="../catalog/catalog-harleyb.html">
                     <img class="image-cover" src="../img/harleyb.webp"
                         onmouseover="this.src='../img/harleyb-1.webp'"
-                        onmouseout="this.src='../img/harleyb.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/harleyb.webp'" height="482" width="315"
                         alt="Harley Black">
                 </a>
             </p>
@@ -277,7 +248,7 @@
                 <a href="../catalog/catalog-harleyd.html">
                     <img class="image-cover" src="../img/harleyd.webp"
                         onmouseover="this.src='../img/harleyd-1.webp'"
-                        onmouseout="this.src='../img/harleyd.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/harleyd.webp'" height="482" width="315"
                         alt="Harley Doctor">
                 </a>
             </p>
@@ -307,7 +278,7 @@
                 <a href="../catalog/catalog-harleyp.html">
                     <img class="image-cover" src="../img/harleyp.webp"
                         onmouseover="this.src='../img/harleyp-1.webp'"
-                        onmouseout="this.src='../img/harleyp.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/harleyp.webp'" height="482" width="315"
                         alt="Harley Pink">
                 </a>
             </p>
@@ -337,7 +308,7 @@
                 <a href="../catalog/catalog-harleyr.html">
                     <img class="image-cover" src="../img/harleyr.webp"
                         onmouseover="this.src='../img/harleyr-1.webp'"
-                        onmouseout="this.src='../img/harleyr.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/harleyr.webp'" height="482" width="315"
                         alt="Harley Red">
                 </a>
             </p>
@@ -367,7 +338,7 @@
                 <a href="../catalog/catalog-harleyrb.html">
                     <img class="image-cover" src="../img/harleyrb.webp"
                         onmouseover="this.src='../img/harleyrb-1.webp'"
-                        onmouseout="this.src='../img/harleyrb.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/harleyrb.webp'" height="482" width="315"
                         alt="Harley Red&amp;Blue">
                 </a>
             </p>
@@ -397,7 +368,7 @@
                 <a href="../catalog/catalog-jokerld.html">
                     <img class="image-cover" src="../img/jokerld.webp"
                         onmouseover="this.src='../img/jokerld.webp'"
-                        onmouseout="this.src='../img/jokerld.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/jokerld.webp'" height="482" width="315"
                         alt="Joker Ledger">
                 </a>
             </p>
@@ -427,7 +398,7 @@
                 <a href="../catalog/catalog-jokerlt.html">
                     <img class="image-cover" src="../img/jokerlt.webp"
                         onmouseover="this.src='../img/jokerlt.webp'"
-                        onmouseout="this.src='../img/jokerlt.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/jokerlt.webp'" height="482" width="315"
                         alt="Joker Leto">
                 </a>
             </p>
@@ -457,7 +428,7 @@
                 <a href="../catalog/catalog-jokerph.html">
                     <img class="image-cover" src="../img/jokerph.webp"
                         onmouseover="this.src='../img/jokerph.webp'"
-                        onmouseout="this.src='../img/jokerph.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/jokerph.webp'" height="482" width="315"
                         alt="Joker Phoenix">
                 </a>
             </p>
@@ -487,7 +458,7 @@
                 <a href="../catalog/catalog-slytherin.html">
                     <img class="image-cover" src="../img/slytherin.webp"
                         onmouseover="this.src='../img/slytherin-1.webp'"
-                        onmouseout="this.src='../img/slytherin.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/slytherin.webp'" height="482" width="315"
                         alt="Slytherin">
                 </a>
             </p>
@@ -517,7 +488,7 @@
                 <a href="../catalog/catalog-addams.html">
                     <img class="image-cover" src="../img/addams.webp"
                         onmouseover="this.src='../img/addams.webp'"
-                        onmouseout="this.src='../img/addams.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/addams.webp'" height="482" width="315"
                         alt="Addams">
                 </a>
             </p>
@@ -547,7 +518,7 @@
                 <a href="../catalog/catalog-decadence.html">
                     <img class="image-cover" src="../img/decadence.webp"
                         onmouseover="this.src='../img/decadence-1.webp'"
-                        onmouseout="this.src='../img/decadence.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/decadence.webp'" height="482" width="315"
                         alt="Decadence">
                 </a>
             </p>
@@ -577,7 +548,7 @@
                 <a href="../catalog/catalog-devilq.html">
                     <img class="image-cover" src="../img/devilq.webp"
                         onmouseover="this.src='../img/devilq-1.webp'"
-                        onmouseout="this.src='../img/devilq.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/devilq.webp'" height="482" width="315"
                         alt="Devil Queen">
                 </a>
             </p>
@@ -607,7 +578,7 @@
                 <a href="../catalog/catalog-lacelike.html">
                     <img class="image-cover" src="../img/lacelike.webp"
                         onmouseover="this.src='../img/lacelike-1.webp'"
-                        onmouseout="this.src='../img/lacelike.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/lacelike.webp'" height="482" width="315"
                         alt="Lacelike">
                 </a>
             </p>
@@ -637,7 +608,7 @@
                 <a href="../catalog/catalog-gothicblack.html">
                     <img class="image-cover" src="../img/gothicblack.webp"
                         onmouseover="this.src='../img/gothicblack-1.webp'"
-                        onmouseout="this.src='../img/gothicblack.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/gothicblack.webp'" height="482" width="315"
                         alt="Gothic black">
                 </a>
             </p>
@@ -667,7 +638,7 @@
                 <a href="../catalog/catalog-gothicbordo.html">
                     <img class="image-cover" src="../img/gothicbordo.webp"
                         onmouseover="this.src='../img/gothicbordo-1.webp'"
-                        onmouseout="this.src='../img/gothicbordo.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/gothicbordo.webp'" height="482" width="315"
                         alt="Gothic Bordo">
                 </a>
             </p>
@@ -697,7 +668,7 @@
                 <a href="../catalog/catalog-charmer.html">
                     <img class="image-cover" src="../img/charmer.webp"
                         onmouseover="this.src='../img/charmer-1.webp'"
-                        onmouseout="this.src='../img/charmer.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/charmer.webp'" height="482" width="315"
                         alt="Charmer">
                 </a>
             </p>
@@ -727,7 +698,7 @@
                 <a href="../catalog/catalog-cyberpunk.html">
                     <img class="image-cover" src="../img/cyberpunk.webp"
                         onmouseover="this.src='../img/cyberpunk-1.webp'"
-                        onmouseout="this.src='../img/cyberpunk.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/cyberpunk.webp'" height="482" width="315"
                         alt="Cyberpunk">
                 </a>
             </p>
@@ -757,7 +728,7 @@
                 <a href="../catalog/catalog-pippilongstocking.html">
                     <img class="image-cover" src="../img/pippilongstocking.webp"
                         onmouseover="this.src='../img/pippilongstocking-1.webp'"
-                        onmouseout="this.src='../img/pippilongstocking.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/pippilongstocking.webp'" height="482" width="315"
                         alt="Pippi Longstocking">
                 </a>
             </p>
@@ -787,7 +758,7 @@
                 <a href="../catalog/catalog-skeleton.html">
                     <img class="image-cover" src="../img/skeleton.webp"
                         onmouseover="this.src='../img/skeleton-1.webp'"
-                        onmouseout="this.src='../img/skeleton.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/skeleton.webp'" height="482" width="315"
                         alt="Skeleton">
                 </a>
             </p>
@@ -817,7 +788,7 @@
                 <a href="../catalog/catalog-bloodybarber.html">
                     <img class="image-cover" src="../img/bloodybarber.webp"
                         onmouseover="this.src='../img/bloodybarber-1.webp'"
-                        onmouseout="this.src='../img/bloodybarber.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/bloodybarber.webp'" height="482" width="315"
                         alt="Bloody Barber">
                 </a>
             </p>
@@ -847,7 +818,7 @@
                 <a href="../catalog/catalog-spider.html">
                     <img class="image-cover" src="../img/spider.webp"
                         onmouseover="this.src='../img/spider.webp'"
-                        onmouseout="this.src='../img/spider.webp'" height="535" width="350"
+                        onmouseout="this.src='../img/spider.webp'" height="482" width="315"
                         alt="Spider">
                 </a>
             </p>
@@ -873,10 +844,9 @@
         </article>
 
     </div>
-
-
 <section class="features">
     <h2 class="visually-hidden">Преимущества</h2>
+
     <ul class="features-list">
         <li class="features-list-item">
             <h3 class="features-list-title">Эксклюзивность</h3>
@@ -884,6 +854,11 @@
                 другое
                 доступно
                 для аренды.</p>
+            <!-- <p class="product-price-features">
+                <b class="product-price-border">от 10 000 ₽</b>
+                <a class="product-price-button"
+                    href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Русалка%20под%20ключ.">Заказать</a>
+            </p> -->
         </li>
         <li class="features-list-item">
             <h3 class="features-list-title">Без хлопот</h3>
@@ -893,26 +868,42 @@
                 3-х
                 дней.
             </p>
+            <!-- <p class="product-price-features">
+                <b class="product-price-border">от 2000 ₽</b>
+                <a class="product-price-button"
+                    href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Анимация%20в%20костюме%20Русалки.">Заказать</a>
+            </p> -->
         </li>
     </ul>
+
     <ul class="features-list">
         <li class="features-list-item">
-            <h3 class="features-list-title">Сопровождение</h3>
-            <p>Русалка "под ключ" - выезд специалиста, укладка с накладными длинными косами, несмываемый
-                грим <br> с
-                блестками
-                и наклейками.</p>
+            <h3 class="features-list-title">Фото-тур</h3>
+            <p>Надоели однообразные фото-студии? Мы организуем выездые мероприятия по локациям Москвы, вместе <br>
+                с профессиональным фотографом.
+            </p>
+            <!-- <p class="product-price-features">
+                <b class="product-price-border">от 5 000 ₽</b>
+                <a class="product-price-button"
+                    href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Анимация%20в%20костюме%20Русалки.">Заказать</a>
+            </p> -->
         </li>
         <li class="features-list-item">
-            <h3 class="features-list-title">Анимация</h3>
-            <p>Нужен актёр в костюме? Девушка-русалка модельной внешности станет частью Вашего мероприятия.
+            <h3 class="features-list-title">Самовывоз</h3>
+            <p>По предварительной договорённости доступен на станциях метро: <br> Кузьминки / Волжская
+                Просьба заранее записаться для встречи.
             </p>
+            <!-- <p class="product-price-features">
+                <b class="product-price-border">от 5 000 ₽</b>
+                <a class="product-price-button"
+                    href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Анимация%20в%20костюме%20Русалки.">Заказать</a>
+            </p> -->
         </li>
     </ul>
-</section>
-<section class="other">
+</section><section class="other">
     <h2 class="other-title">Другие категории</h2>
     <div class="other-list">
+
         <div class="other-list-content">
             <a href="../pages/summer.html">
                 <img loading="lazy" class="other-image" src="../img/summer.jpg" width="475" height="390"
@@ -949,11 +940,13 @@
             </a>
         </div>
     </div>
+
     <div class="other-list-button">
         <a href="#part1">В начало</a>
     </div>
 </section>
 </main> <!-- пока так -->
+
 <footer>
     <div class="footer-container">
         <ul class="bottomline-menu">

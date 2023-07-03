@@ -47,36 +47,6 @@
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <meta name="yandex-verification" content="52c59b10d41606f2">
     -->
-    <script>
-        Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
-
-            switch (operator) {
-                case '==':
-                    return (v1 == v2) ? options.fn(this) : options.inverse(this);
-                case '===':
-                    return (v1 === v2) ? options.fn(this) : options.inverse(this);
-                case '!=':
-                    return (v1 != v2) ? options.fn(this) : options.inverse(this);
-                case '!==':
-                    return (v1 !== v2) ? options.fn(this) : options.inverse(this);
-                case '<':
-                    return (v1 < v2) ? options.fn(this) : options.inverse(this);
-                case '<=':
-                    return (v1 <= v2) ? options.fn(this) : options.inverse(this);
-                case '>':
-                    return (v1 > v2) ? options.fn(this) : options.inverse(this);
-                case '>=':
-                    return (v1 >= v2) ? options.fn(this) : options.inverse(this);
-                case '&&':
-                    return (v1 && v2) ? options.fn(this) : options.inverse(this);
-                case '||':
-                    return (v1 || v2) ? options.fn(this) : options.inverse(this);
-                default:
-                    return options.inverse(this);
-            }
-        });
-    </script>
-
 </head>
 
 <body>
@@ -123,14 +93,15 @@
                     <ul class="navigation-menu">
                         <li><a class="navigation-menu-list" title="Развернуть меню" href="#">Меню</a>
                         </li>
-                        <li><a class="navigation-menu-list" title="Аренда все платья" href="../pages/catalog.html">Все
+                        <li><a class="navigation-menu-list" title="Аренда все платья"
+                                href="../pages/catalog_full.html">Все
                                 платья</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда летних платьев"
                                 href="../pages/summer.html">Летние</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда вечерних платьев"
-                                href="../pages/night/html">Вечерние</a>
+                                href="../pages/night.html">Вечерние</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда коктельных платьев"
                                 href="../pages/cocktail.html">Коктельные</a>
@@ -157,11 +128,11 @@
             <!-- SLIDER -->
             <div class="foto-slider">
                 <div class="my-slider">
-                    <img src="../img/arielblue.jpg" class="minimized" width="540" height="800" alt="фото стоя">
-                    <img src="../img/arielblue-1.jpg" class="minimized" width="540" height="800" alt="фото лёжа">
-                    <img src="../img/arielblue-2.jpg" class="minimized" width="540" height="800" alt="фото сидя">
-                    <img src="../img/arielblue-3.jpg" class="minimized" width="540" height="800" alt="фото сидя 2">
-                    <img src="../img/arielblue-4.jpg" class="minimized" width="540" height="800" alt="фото лёжа 2">
+                    <img src="../img/arielblue.jpg" class="minimized" width="432" height="640" alt="фото стоя">
+                    <img src="../img/arielblue-1.jpg" class="minimized" width="432" height="640" alt="фото лёжа">
+                    <img src="../img/arielblue-2.jpg" class="minimized" width="432" height="640" alt="фото сидя">
+                    <img src="../img/arielblue-3.jpg" class="minimized" width="432" height="640" alt="фото сидя 2">
+                    <img src="../img/arielblue-4.jpg" class="minimized" width="432" height="640" alt="фото лёжа 2">
                 </div>
                 <ul class="control" id="custom-control">
                     <li class="prev">
@@ -231,10 +202,10 @@
                 </a>
             </p>
         </section>
-        <script type="text/javascript" src="../libs/minimized.js"></script>
-        <script src="../libs/script.min.js"></script>
-    </div>
 
+        <script type="text/javascript" src="../libs/script.min.js"></script>
+        <script src="../libs/tiny-slider.min.js"></script>
+    </div>
 <div class="features">
     <ul class="features-list">
         <li class="features-list-item">
@@ -258,11 +229,28 @@
             </p>
         </li>
     </ul>
-</div>
-
-<section class="other">
+    <ul class="features-list">
+        <li class="features-list-item">
+            <h3 class="features-list-title">Эксклюзивность</h3>
+            <p>Мы создадим полный образ по Вашим пожелания! <br>Корона, парик, комплект украшений и многое
+                другое
+                доступно
+                для аренды.</p>
+        </li>
+        <li class="features-list-item">
+            <h3 class="features-list-title">Без хлопот</h3>
+            <p>Курьер доставит желаемый образ в нужное место. <br> По согласованию возможна длительная
+                аренда <br> в
+                отпуск, от
+                3-х
+                дней.
+            </p>
+        </li>
+    </ul>
+</div><section class="other">
     <h2 class="other-title">Другие категории</h2>
     <div class="other-list">
+
         <div class="other-list-content">
             <a href="../pages/summer.html">
                 <img loading="lazy" class="other-image" src="../img/summer.jpg" width="475" height="390"
@@ -299,11 +287,13 @@
             </a>
         </div>
     </div>
+
     <div class="other-list-button">
         <a href="#part1">В начало</a>
     </div>
 </section>
 </main> <!-- пока так -->
+
 <footer>
     <div class="footer-container">
         <ul class="bottomline-menu">

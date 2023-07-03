@@ -47,36 +47,6 @@
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <meta name="yandex-verification" content="52c59b10d41606f2">
     -->
-    <script>
-        Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
-
-            switch (operator) {
-                case '==':
-                    return (v1 == v2) ? options.fn(this) : options.inverse(this);
-                case '===':
-                    return (v1 === v2) ? options.fn(this) : options.inverse(this);
-                case '!=':
-                    return (v1 != v2) ? options.fn(this) : options.inverse(this);
-                case '!==':
-                    return (v1 !== v2) ? options.fn(this) : options.inverse(this);
-                case '<':
-                    return (v1 < v2) ? options.fn(this) : options.inverse(this);
-                case '<=':
-                    return (v1 <= v2) ? options.fn(this) : options.inverse(this);
-                case '>':
-                    return (v1 > v2) ? options.fn(this) : options.inverse(this);
-                case '>=':
-                    return (v1 >= v2) ? options.fn(this) : options.inverse(this);
-                case '&&':
-                    return (v1 && v2) ? options.fn(this) : options.inverse(this);
-                case '||':
-                    return (v1 || v2) ? options.fn(this) : options.inverse(this);
-                default:
-                    return options.inverse(this);
-            }
-        });
-    </script>
-
 </head>
 
 <body>
@@ -123,14 +93,15 @@
                     <ul class="navigation-menu">
                         <li><a class="navigation-menu-list" title="Развернуть меню" href="#">Меню</a>
                         </li>
-                        <li><a class="navigation-menu-list" title="Аренда все платья" href="../pages/catalog.html">Все
+                        <li><a class="navigation-menu-list" title="Аренда все платья"
+                                href="../pages/catalog_full.html">Все
                                 платья</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда летних платьев"
                                 href="../pages/summer.html">Летние</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда вечерних платьев"
-                                href="../pages/night/html">Вечерние</a>
+                                href="../pages/night.html">Вечерние</a>
                         </li>
                         <li><a class="navigation-menu-list" title="Аренда коктельных платьев"
                                 href="../pages/cocktail.html">Коктельные</a>
@@ -160,13 +131,13 @@
             <!-- SLIDER -->
             <div class="foto-slider">
                 <div class="my-slider">
-                    <img src="../img/evening_star.jpg" class="minimized" width="540" height="800" alt="фото образа">
+                    <img src="../img/evening_star.jpg" class="minimized" width="432" height="640" alt="фото образа">
                     <img src="../img/evening_star-1.webp" class="minimized"
-                        width="540" height="800" alt="фото образа">
+                        width="432" height="640" alt="фото образа">
                     <img src="../img/evening_star-2.webp" class="minimized"
-                        width="540" height="800" alt="фото образа">
+                        width="432" height="640" alt="фото образа">
                     <img src="../img/evening_star.webp" class="minimized"
-                        width="540" height="800" alt="фото образа">
+                        width="432" height="640" alt="фото образа">
                 </div>
                 <ul class="control" id="custom-control">
                     <li class="prev">
@@ -241,10 +212,9 @@
         <script type="text/javascript" src="../libs/script.min.js"></script>
         <script src="../libs/tiny-slider.min.js"></script>
     </div>
-
-
 <section class="features">
     <h2 class="visually-hidden">Преимущества</h2>
+
     <ul class="features-list">
         <li class="features-list-item">
             <h3 class="features-list-title">Эксклюзивность</h3>
@@ -252,6 +222,11 @@
                 другое
                 доступно
                 для аренды.</p>
+            <!-- <p class="product-price-features">
+                <b class="product-price-border">от 10 000 ₽</b>
+                <a class="product-price-button"
+                    href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Русалка%20под%20ключ.">Заказать</a>
+            </p> -->
         </li>
         <li class="features-list-item">
             <h3 class="features-list-title">Без хлопот</h3>
@@ -261,26 +236,42 @@
                 3-х
                 дней.
             </p>
+            <!-- <p class="product-price-features">
+                <b class="product-price-border">от 2000 ₽</b>
+                <a class="product-price-button"
+                    href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Анимация%20в%20костюме%20Русалки.">Заказать</a>
+            </p> -->
         </li>
     </ul>
+
     <ul class="features-list">
         <li class="features-list-item">
-            <h3 class="features-list-title">Сопровождение</h3>
-            <p>Русалка "под ключ" - выезд специалиста, укладка с накладными длинными косами, несмываемый
-                грим <br> с
-                блестками
-                и наклейками.</p>
+            <h3 class="features-list-title">Фото-тур</h3>
+            <p>Надоели однообразные фото-студии? Мы организуем выездые мероприятия по локациям Москвы, вместе <br>
+                с профессиональным фотографом.
+            </p>
+            <!-- <p class="product-price-features">
+                <b class="product-price-border">от 5 000 ₽</b>
+                <a class="product-price-button"
+                    href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Анимация%20в%20костюме%20Русалки.">Заказать</a>
+            </p> -->
         </li>
         <li class="features-list-item">
-            <h3 class="features-list-title">Анимация</h3>
-            <p>Нужен актёр в костюме? Девушка-русалка модельной внешности станет частью Вашего мероприятия.
+            <h3 class="features-list-title">Самовывоз</h3>
+            <p>По предварительной договорённости доступен на станциях метро: <br> Кузьминки / Волжская
+                Просьба заранее записаться для встречи.
             </p>
+            <!-- <p class="product-price-features">
+                <b class="product-price-border">от 5 000 ₽</b>
+                <a class="product-price-button"
+                    href="https://wa.me/79261055904?text=Здравствуйте,%20интересует%20Анимация%20в%20костюме%20Русалки.">Заказать</a>
+            </p> -->
         </li>
     </ul>
-</section>
-<section class="other">
+</section><section class="other">
     <h2 class="other-title">Другие категории</h2>
     <div class="other-list">
+
         <div class="other-list-content">
             <a href="../pages/summer.html">
                 <img loading="lazy" class="other-image" src="../img/summer.jpg" width="475" height="390"
@@ -317,11 +308,13 @@
             </a>
         </div>
     </div>
+
     <div class="other-list-button">
         <a href="#part1">В начало</a>
     </div>
 </section>
 </main> <!-- пока так -->
+
 <footer>
     <div class="footer-container">
         <ul class="bottomline-menu">
