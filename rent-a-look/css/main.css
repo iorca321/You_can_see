@@ -3,7 +3,7 @@
 body {
     margin: 0 auto;
     padding: 0;
-    min-width: 350px;
+    min-width: 375;
     height: 100vh;
     color: white;
     font-family: "Open Sans", "Roboto", sans-serif;
@@ -474,6 +474,11 @@ header {
     width: 432px;
 }
 
+@media (max-width: 431px) {
+    .foto-slider {
+        width: 375px;
+    }
+}
 /* Minimized FOTO */
 /* начальная картинка */
 .minimized {
@@ -562,7 +567,8 @@ header {
     transform: scale(1.5);
     } */
 .product-info {
-    width: 475px;
+    padding-left: 10px;
+    width: 432px;
     color: #000;
 }
 
@@ -588,7 +594,6 @@ header {
 }
 
 .product-text {
-    width: 450px;
     font-size: 18px;
     text-align: left;
     line-height: 1.67;
