@@ -26,7 +26,7 @@ var tns=function(){var t=window,Ai=t.requestAnimationFrame||t.webkitRequestAnima
 
 var slider = tns({
     container: ".my-slider",
-    fixedWidth: 540,
+    fixedWidth: 432,
     controlsContainer: "#custom-control",
     items: 1,
     controlsPosition: "bottom",

@@ -22,9 +22,60 @@ $(function(){
       });
     });
   });
+// const catalog = document.querySelectorAll('.catalog');
 
-var used=[];
-function checkIt(e){
-    if( !~used.indexOf( this)) used.push( this), e.preventDefault();
-}
-$('.navigation-menu-list').on('click',checkIt);
+// document.querySelector('ul').addEventListener('click', (event) => {
+//     if (event.target.tagName !== 'LI') return false;
+
+//     let filterClass = event.target.dataset['f'];
+//     console.log(filterClass);
+// });
+
+// const { compileString } = require("sass");
+
+// var used=[];
+// function checkIt(e){
+//     if( !~used.indexOf( this)) used.push( this), e.preventDefault();
+// }
+// $('.navigation-menu-list').on('click',checkIt);
+
+
+// const list = document.querySelector('.filter_list'),
+//       items = document.querySelectorAll('.catalog')
+
+// function filter () {
+//     addEventListener('click', event=> {
+//         const targetId = event.target.dataset.id
+//         console.log(targetId)
+
+//         switch(targetId) {
+//             case 'all':
+//                 break
+//             case 'summer':
+//                 items.forEach(item => {
+//                     if (item.classlist.contains('summer')) {
+//                         item.style.display = 'block'
+//                     } else {
+//                         item.style.display = 'none'
+//                     }
+//                 })
+//                 break
+//             case 'night':
+//                 items.forEach(item => {
+//                     if (item.classlist.contains('night')) {
+//                         item.style.display = 'block'
+//                     } else {
+//                         item.style.display = 'none'
+//                     }
+//                 })
+//                 break
+//             case 'cocktail':
+//                 break
+//             case 'cosplay':
+//                 break
+//             case 'mermaid':
+//                 break
+//         }
+//     })
+// }
+// filter()
