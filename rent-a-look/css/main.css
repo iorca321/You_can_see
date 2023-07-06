@@ -3,7 +3,7 @@
 body {
     margin: 0 auto;
     padding: 0;
-    min-width: 375;
+    min-width: 375px;
     height: 100vh;
     color: white;
     font-family: "Open Sans", "Roboto", sans-serif;
@@ -278,6 +278,10 @@ header {
     color: #808080;
 }
 
+.catalog-item-size span:not(:last-of-type)::after {
+    content: " /";
+}
+
 .catalog-item-price {
     font-size: 25px;
     margin: 15px 0 0 15px;
@@ -467,6 +471,12 @@ header {
     gap: 95px;
 }
 
+@media (max-width: 985px) {
+    .product-card {
+        gap: 25px;
+    }
+}
+
 .product-foto {
     display: block;
     -o-object-fit: cover;
@@ -476,6 +486,7 @@ header {
 
 @media (max-width: 431px) {
     .foto-slider {
+        margin: auto;
         width: 375px;
     }
 }
@@ -597,6 +608,10 @@ header {
     font-size: 18px;
     text-align: left;
     line-height: 1.67;
+}
+
+.product-text strong span:not(:last-of-type)::after {
+    content: " / ";
 }
 
 .product-price {
