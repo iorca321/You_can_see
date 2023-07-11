@@ -164,6 +164,12 @@ header {
     }
 }
 
+.navigation__bottom {
+    background: url(../img/i/header-max.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .navigation-menu {
     margin: 15px 0 0;
     display: flex;

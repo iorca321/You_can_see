@@ -8,7 +8,7 @@ const options = {
 
 function handleImg(myImg, observer) {
   myImg.forEach((myImgSingle) => {
-    console.log(myImgSingle.intersectionRatio);
+    // console.log(myImgSingle.intersectionRatio);
     if (myImgSingle.intersectionRatio > 0) {
       loadImage(myImgSingle.target);
     }
