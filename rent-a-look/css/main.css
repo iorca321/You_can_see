@@ -269,13 +269,14 @@ header {
     text-align: left;
     font-weight: normal;
     text-decoration: underline;
+    text-transform: capitalize;
     color: #000000;
 }
 
 .catalog-item-size {
     margin: 15px 5px 0 15px;
     text-align: left;
-    color: #808080;
+    color: #464343;
 }
 
 .catalog-item-size span:not(:last-of-type)::after {
@@ -327,13 +328,13 @@ header {
     max-width: 1440px;
     margin-top: 50px;
     padding: 100px 0;
-    background: url(../img//i/back.jpg);
+    background: url(../img//i/back.webp);
     background-size: cover;
 }
 
 @media (max-width: 1032px) {
     .features {
-        background: #111217 url(../img//i/back.jpg) no-repeat 50% -45px;
+        background: #111217 url(../img//i/back.webp) no-repeat 50% -45px;
         background-size: cover;
         padding: 10px 15px;
     }
