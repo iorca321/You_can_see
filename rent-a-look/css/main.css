@@ -332,17 +332,16 @@ header {
 
 .features {
     max-width: 1440px;
-    margin-top: 50px;
     padding: 100px 0;
     background: url(../img//i/back.webp);
     background-size: cover;
 }
 
-@media (max-width: 1032px) {
+@media (max-width: 950px) {
     .features {
-        background: #111217 url(../img//i/back.webp) no-repeat 50% -45px;
-        background-size: cover;
-        padding: 10px 15px;
+        background: #111217 url(../img//i/back.webp) no-repeat 50% -105px;
+    /* background-size: cover; */
+        padding: 30px 15px;
     }
 }
 
@@ -350,9 +349,25 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 90px 0;
     padding: 0;
+    margin: 0;
     gap: 90px;
+}
+
+@media (max-width: 1032px) {
+    .features-list {
+        gap: 30px;
+    }
+}
+
+.list-margin {
+    margin-bottom: 90px;
+}
+
+@media (max-width: 1032px) {
+    .list-margin {
+        margin-bottom: 30px;
+    }
 }
 
 .features-list p {
@@ -379,6 +394,8 @@ header {
 
 .other {
     max-width: 1440px;
+    margin-top: 50px;
+    padding-bottom: 50px;
     background-color: #e6e5e0;
 }
 
@@ -454,7 +471,7 @@ header {
 .other-list-button {
     width: 200px;
     height: 50px;
-    margin: 50px auto 50px;
+    margin: 50px auto 0px;
     text-align: center;
     background-color: #b9cfc1;
     border-radius: 10px;
@@ -585,9 +602,14 @@ header {
     transform: scale(1.5);
     } */
 .product-info {
-    padding-left: 10px;
     width: 432px;
     color: #000;
+}
+
+@media (max-width: 540px) {
+    .product-info {
+        padding: 0 10px 0 10px;
+    }
 }
 
 .product-availability {
@@ -683,11 +705,11 @@ header {
 }
 
 .product-guide {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     margin-top: 33px;
-    width: 475px;
     height: 50px;
     font-size: 16px;
     line-height: 1.67;
